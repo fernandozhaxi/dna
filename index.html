@@ -1,0 +1,3279 @@
+<!DOCTYPE html>
+<html class="r">
+
+<head>
+	<title>AncestryDNA&reg; | DNA Tests for Ethnicity &amp; Genealogy DNA Test</title>
+	<meta name="description"
+		content="AncestryDNA&reg; is the newest DNA test which helps you find genetic relatives and expand your genealogy research. Order your DNA test kit today.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<link href="css/stdin.css" rel="stylesheet" />
+	<link href="css/core.css" rel="stylesheet" />
+	<style>
+		/* global header/footer styles */
+
+		#FooterRegion.footer2 {
+			margin-top: 0 !important;
+		}
+
+		/* default dna styles - desktop */
+		.ancBtn.ancBtnDna {
+			text-transform: none;
+		}
+
+		#modal iframe {
+			margin: auto;
+		}
+
+		.dnaV3Sprite {
+			background-image: url(images//dna-hp-v3-sprite.png);
+		}
+
+		#dnaHomeMainPage {
+			min-width: 600px;
+			max-width: 100%;
+			position: relative;
+		}
+
+		.sectionHeader h2 {
+			font-size: 60px;
+			font-weight: 200;
+		}
+
+		.sectionHeader p {
+			font-size: 20px;
+		}
+
+		.dnaHomeFooter {
+			background-color: #fff;
+			padding: 10px 0;
+		}
+
+		.dnaHomeFooter li {
+			border-left: 1px solid rgba(125, 125, 125, .4);
+			display: inline-block;
+			padding: 0 10px;
+		}
+
+		.dnaHomeFooter li:first-child {
+			border-left: 0;
+		}
+
+		.dnaBadgeInfo {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+			background-color: #64afca;
+			background-origin: padding-box;
+			border: 0;
+			border-radius: 15px;
+			color: #fff !important;
+			display: inline-block;
+			font-family: inherit;
+			font-size: 11px;
+			-webkit-font-smoothing: antialiased;
+			font-style: normal;
+			font-weight: bold;
+			height: 15px;
+			line-height: 15px;
+			min-width: 20px;
+			padding: 0 5px;
+			position: relative;
+			text-align: center;
+			text-decoration: none !important;
+			text-shadow: 0 0 3px rgba(0, 0, 0, .3);
+			text-transform: uppercase;
+			top: -.125em;
+			vertical-align: middle;
+		}
+
+		@media only screen and (max-width:1005px) {
+			.sectionHeader h2 {
+				font-size: 50px;
+			}
+
+			.dnaHeroContentWrap {
+				background: #f1f1f1 url('images/ukdna-herobg-brandCampaign.jpg') no-repeat;
+				background-position: 208% 100%;
+				background-size: 60% auto;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				min-height: 100%;
+				margin: auto;
+				padding: 0;
+				position: relative;
+				max-width: 1400px
+			}
+
+		}
+
+		@media only screen and (max-width:767px) {
+			.sectionHeader h2 {
+				font-size: 45px;
+				font-weight: 200;
+			}
+
+			#dnaHomeMainPage {
+				background-color: #f1f1f1;
+				max-width: 768px;
+				min-width: 320px;
+				width: 100%;
+			}
+		}
+
+		/* hero section - desktop */
+		#dnaHomeHeroSection {
+			background: #f1f1f1;
+			/* border-top:8px solid #1b88b0; */
+			position: relative;
+			max-width: 1440px;
+			margin: 0 auto;
+		}
+
+		.dnaHeroContentWrap {
+			background: #f1f1f1 url('images/ukdna-herobg-brandCampaign.jpg') no-repeat;
+			background-position: 108% 100%;
+			background-size: 60% auto;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			min-height: 100%;
+			margin: auto;
+			padding: 0;
+			position: relative;
+			max-width: 1400px
+		}
+
+		.dnaHeroContentWrap #dnaHeroContent {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			margin: 45px 0 0 5%;
+			max-width: 100%;
+			padding-bottom: 15px;
+			position: relative;
+		}
+
+		.dnaHeroContentWrap .dnaHeroHeadline {
+			margin-bottom: 20px;
+			padding-right: 0px;
+			position: relative;
+		}
+
+		.dnaHeroContentWrap #dnaHeroContent h1 {
+			color: #534d46;
+			font-size: 48px;
+			font-weight: 600;
+			width: 690px;
+			line-height: 1.1;
+		}
+
+		.dnaHeroContentWrap #dnaHeroContent p {
+			font-size: 28px;
+			line-height: 40px;
+			margin-bottom: 10px;
+			max-width: 530px;
+		}
+
+		#dnaKitImg {
+			background-position: 154px -90px;
+			float: left;
+			height: 165px;
+			margin-top: 10px;
+			width: 150px;
+		}
+
+		.dnaHeroContentWrap .heroPricingCon {
+			float: left;
+			max-width: 300px;
+		}
+
+		.dnaHeroContentWrap .heroPricingCon .onlySpan {
+			display: block;
+			font-size: 30px;
+			font-weight: 900;
+			line-height: 45px;
+			margin-right: 10px;
+			margin-top: 20px;
+			text-transform: uppercase;
+		}
+
+		.dnaHeroContentWrap .heroPricingCon .bigPrice {
+			color: #1b88b0;
+			display: block;
+			font-size: 78px;
+			font-weight: 900;
+			line-height: 42px;
+		}
+
+		.bigPrice .bigPriceAsterisk {
+			font-size: 0.35em;
+		}
+
+		.dnaHeroContentWrap .heroPricingCon .heroCta {
+			display: block;
+			margin: 0 0 30px;
+		}
+
+		.dnaHeroContentWrap .heroPricingCon .ancBtn.lrg {
+			height: 50px;
+			line-height: 52px;
+			padding: 0 30px;
+		}
+
+		small.priceFinePrint {
+			clear: both;
+			display: block;
+		}
+
+		@media only screen and (max-width:1005px) {
+			.dnaHeroContentWrap {
+				background-position: 112% 100%;
+				background-size: 75% auto;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent {
+				padding-bottom: 10px;
+			}
+
+			.dnaHeroContentWrap .dnaHeroHeadline {
+				padding-right: 0px;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent h1 {
+				color: #534d46;
+				font-size: 48px;
+				font-weight: 600;
+				line-height: 1em;
+				width: 470px;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent h2 {
+				font-size: 22px;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent p {
+				font-size: 24px;
+				line-height: 35px;
+				margin-bottom: 30px;
+				max-width: 470px;
+			}
+		}
+
+		@media only screen and (max-width:875px) {
+			.dnaHeroContentWrap {
+				background-position: 112% 100%;
+				background-size: 75% auto;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent {
+				margin: 0;
+				padding: 30px 20px 10px;
+			}
+
+			.dnaHeroContentWrap .dnaHeroHeadline {
+				padding-right: 0px;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent p {
+				font-size: 26px;
+				margin-bottom: 10px;
+				width: 466px;
+			}
+
+			.dnaHeroContentWrap .heroPricingCon .onlySpan {
+				margin-top: 10px;
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			.dnaHeroContentWrap #dnaHeroContent h1 {
+				font-size: 36px;
+				font-weight: 400;
+			}
+
+			.dnaHeroContentWrap #dnaHeroContent p {
+				font-size: 20px;
+				line-height: 24px;
+			}
+		}
+
+		/* hero section - mobile */
+		.dnaHpHeaderWrap {
+			position: relative;
+			top: 0;
+			width: 100%;
+			z-index: 10;
+		}
+
+		.smpAncHeader {
+			color: #fff;
+			height: 50px;
+			left: 0;
+			line-height: 50px;
+			text-align: center;
+			top: 0;
+			z-index: 500;
+			background-color: #fff;
+		}
+
+		.heroContent .link:active,
+		.heroContent .link:hover,
+		.heroContent .link:focus,
+		a.heroCtaBtn:active,
+		a.heroCtaBtn:hover,
+		a.heroCtaBtn:focus {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.heroBkgImg {
+			background: url('images/dnahero-kylebkg640-mobile.webp') no-repeat #e6e4e1;
+			background-size: 100% 100%;
+			display: block;
+			max-width: 480px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+		}
+
+		.heroBkgImg:after {
+			content: '';
+			display: block;
+			height: 0;
+			padding-bottom: 62.5%;
+		}
+
+		.heroContent {
+			padding-top: 295px;
+			position: relative;
+		}
+
+		.heroHeadlineWrapper {
+			display: block;
+			padding: 15px 5px 0;
+			width: 100%;
+		}
+
+		.heroHeadline,
+		.heroSubHeadline {
+			text-align: center;
+		}
+
+		.heroHeadline {
+			font-size: 42px;
+			line-height: 1em;
+		}
+
+		.heroContent .heroSubHeadline {
+			font-size: 17px;
+		}
+
+		.heroCtaWrapper {
+			display: block;
+			float: right;
+			margin: 10px 0 20px;
+		}
+
+		.heroCtaWrapper>span,
+		a.heroCtaBtn {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.priceText {
+			color: #1b88b0;
+			font-size: 90px;
+			line-height: 1em;
+			margin: 0 15px 0 10px;
+		}
+
+		.priceTxtAsterisk {
+			font-size: 0.35em;
+		}
+
+		a.heroCtaBtn {
+			background-color: #7a9c0f;
+			color: #fff;
+			font-size: 22px;
+			padding: 15px;
+		}
+
+		.ctaText {
+			line-height: 1em;
+		}
+
+		a.heroCtaBtn>span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		/* StrikeThroughPrice */
+		.strikeThroughPrice {
+			font-size: 0.6em;
+			margin-left: 5px;
+			position: relative;
+		}
+
+		.strikeThroughPrice:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #a62219;
+			left: 0;
+			top: 50%;
+			-webkit-transform: rotate(-15deg);
+			transform: rotate(-15deg);
+		}
+
+		.dnaHeroContentWrap #dnaKitImg {
+			background-position: 154px -90px;
+			height: 165px;
+			left: -27px;
+			/*position:absolute;*/
+			top: 10px;
+			width: 150px;
+		}
+
+		.priceLegal {
+			margin-top: 5px;
+		}
+
+		@media only screen and (max-width:735px) {
+			.heroBkgImg {
+				max-width: 420px;
+			}
+
+			.heroContent {
+				padding-top: 260px;
+			}
+		}
+
+		@media only screen and (max-width:665px) {
+			.heroBkgImg {
+				max-width: 320px;
+			}
+
+			.heroContent {
+				padding-top: 200px;
+			}
+
+			.heroHeadline {
+				font-size: 36px;
+			}
+		}
+
+		@media only screen and (max-width:567px) {
+			.heroContent {
+				padding-top: 185px;
+			}
+
+			.heroHeadline {
+				font-size: 30px;
+			}
+
+			.heroContent .heroSubHeadline {
+				font-size: 15px;
+			}
+
+			.valueText {
+				font-size: 25px;
+			}
+
+			.priceText {
+				font-size: 70px;
+				margin: 0 10px 0 5px;
+			}
+
+			a.heroCtaBtn {
+				font-size: 19px;
+				padding: 12px 8px 12px 15px;
+			}
+
+			.ctaText {
+				font-size: 22px;
+			}
+
+			.priceLegal {
+				font-size: 15px;
+			}
+		}
+
+		@media only screen and (max-width:390px) {
+			.priceText {
+				font-size: 45px;
+			}
+		}
+
+		/* get started section - desktop */
+		#whatDnaBanner {
+			background: #1b88b0;
+			font-size: 50px;
+			font-weight: 200;
+			line-height: 52px;
+			padding: 50px 10px 80px 10px;
+			text-align: center;
+			width: 100%;
+		}
+
+		#whatDnaBanner h2 {
+			font-size: 60px;
+			font-weight: 200;
+			line-height: 65px;
+		}
+
+		#whatDnaBanner a:hover {
+			text-decoration: none;
+		}
+
+		#whatDnaBanner span {
+			font-size: 20px;
+		}
+
+		#whatDnaBanner strong {
+			color: #86cae3;
+			font-size: 24px;
+		}
+
+		#getStartedWrap {
+			background: #1b88b0;
+			padding-bottom: 30px;
+			width: 100%;
+		}
+
+		#getStartedWrap .getStartedCon {
+			margin: auto;
+			max-width: 1330px;
+			width: 100%;
+		}
+
+		#getStartedWrap .stepsBubble {
+			background-color: #64afca;
+			border-radius: 105px;
+			margin: auto;
+			padding: 34px 45px;
+			width: 209px;
+		}
+
+		#getStartedWrap .dnaV3Sprite {
+			display: block;
+			height: 141px;
+			width: 115px;
+		}
+
+		#getStartedWrap .dnaV3Sprite.step2Img {
+			background-position: 257px 0;
+			margin: -10px 0 10px 7px;
+			width: 98px;
+		}
+
+		#getStartedWrap .dnaV3Sprite.step3Img {
+			background-position: 0 -133px;
+			margin: 0 0 0 25px;
+			width: 65px;
+		}
+
+		#getStartedWrap .dnaV3Sprite.step4Img {
+			background-position: 302px -143px;
+			height: 119px;
+			margin: 10px 0 12px -6px;
+			width: 132px;
+		}
+
+		#getStartedWrap .stepsWrap p {
+			color: #fff;
+			line-height: 27px;
+			margin: auto;
+			padding: 30px 0;
+			text-align: center;
+			max-width: 220px;
+		}
+
+		@media only screen and (max-width:1300px) {
+			#whatDnaBanner {
+				padding: 50px 10px;
+			}
+		}
+
+		@media only screen and (max-width:1005px) {
+			#whatDnaBanner h2 {
+				font-size: 50px;
+				max-width: 700px;
+				margin: 0 auto;
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			#whatDnaBanner {
+				font-size: 24px;
+				padding: 40px 10px;
+			}
+
+			#whatDnaBanner h2 {
+				font-size: 40px;
+			}
+		}
+
+		/* get started section - mobile */
+		#aboutDnaWrapPortrait {
+			display: block;
+			position: relative;
+			background: #1b88b0;
+			padding-bottom: 30px;
+			padding-top: 1px;
+			width: 100%;
+		}
+
+		.aboutDnaHeadlineWrap {
+			padding: 0 10px;
+		}
+
+		.aboutDnaTitle {
+			font-size: 27px;
+			line-height: 30px;
+			font-weight: 200;
+		}
+
+		/*#heroScrollBtn { background-color:#1b88b0; display:block; padding:10px 10px 5px; text-align:center; width:100%; }
+            #heroScrollBtn.anViewable { cursor:default; padding:10px; }
+            .anViewable .tapPromptTxt { display:none; }*/
+		#aboutDnaWrapPortrait .getStartedCon {
+			margin-top: 15px;
+		}
+
+		#aboutDnaWrapPortrait .stepsBubble {
+			background-color: #64afca;
+			border-radius: 105px;
+			margin: auto;
+			padding: 34px 45px;
+			width: 209px;
+		}
+
+		#aboutDnaWrapPortrait .dnaV3Sprite {
+			display: block;
+			height: 141px;
+			width: 115px;
+		}
+
+		#aboutDnaWrapPortrait .dnaV3Sprite.step2Img {
+			background-position: 259px 0;
+			margin: -10px 0 10px 7px;
+			width: 100px;
+		}
+
+		#aboutDnaWrapPortrait .dnaV3Sprite.step3Img {
+			background-position: 0 -133px;
+			margin: 0 0 0 25px;
+			width: 65px;
+		}
+
+		#aboutDnaWrapPortrait .dnaV3Sprite.step4Img {
+			background-position: 302px -143px;
+			height: 119px;
+			margin: 10px 0 12px -6px;
+			width: 132px;
+		}
+
+		#aboutDnaWrapPortrait .stepsWrap p {
+			line-height: 27px;
+			margin: auto;
+			padding: 10px 0 20px;
+			text-align: center;
+			max-width: 220px;
+		}
+
+		/*@media only screen and (max-width:567px) {
+              #heroScrollBtn > .textxlrg { font-size:15px; }
+              #heroScrollBtn { font-size:13px; }
+            }*/
+		/* uncover section - desktop */
+		#uncoverWrap {
+			background-color: #f0eee9;
+			overflow: hidden;
+			position: relative;
+		}
+
+		#uncoverWrap #uncoverCon {
+			margin: auto;
+			padding: 90px 20px 20px;
+			position: relative;
+			max-width: 1330px;
+			width: 100%;
+		}
+
+		#uncoverWrap .ethnicityMap {
+			background-image: url('images/ukdna-ethnicity-map.png');
+			z-index: 1;
+		}
+
+		#uncoverWrap .ethnicityBlobs {
+			background-image: url('images/EV4-ukdna-ethnicity-blobs.png');
+			opacity: 0;
+			z-index: 2;
+		}
+
+		#uncoverWrap .ethnicityMap,
+		#uncoverWrap .ethnicityBlobs {
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 1px;
+			padding-top: 50%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			max-width: 1122px;
+			width: 68%;
+		}
+
+		#uncoverWrap .ethnicityBlobs {
+			padding-top: 35%;
+		}
+
+		#uncoverWrap .ethmixCon {
+			position: relative;
+			z-index: 10;
+		}
+
+		#uncoverWrap h3 {
+			font-size: 60px;
+			font-weight: 200;
+			line-height: 65px;
+			margin-top: 0;
+		}
+
+		#uncoverWrap .ethmixCon h3 {
+			padding-right: 100px;
+			position: relative;
+			max-width: 720px;
+		}
+
+		#uncoverWrap .ethmixCon h3 #ethnicPie {
+			background-position: 500px 0;
+			display: block;
+			height: 87px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 90px;
+		}
+
+		#uncoverWrap .ethmixCon p#ethnicText {
+			font-size: 22px;
+			padding: 10px 5px;
+			max-width: 500px;
+		}
+
+		#uncoverWrap .ethmixCon p#ethnicText a {
+			text-decoration: none;
+		}
+
+		#uncoverWrap p button.ancLink {
+			background: none;
+			border: none;
+			color: #03678b;
+			font-weight: 600;
+			padding: 0;
+			text-decoration: none;
+		}
+
+		#uncoverWrap .findRelativesCon {
+			float: none;
+			margin: 70px 0;
+			padding: 0;
+			position: relative;
+			width: 100%;
+			z-index: 10;
+		}
+
+		.findRelativesGrid .findRelativesGridContent {
+			padding: 70px 0 0 50px;
+		}
+
+		.findRelativesFaces {
+			background-image: url("images/dnahp-relatives-faces.png");
+			background-size: 100% 100%;
+			max-width: 591px;
+			width: 100%;
+		}
+
+		.findRelativesFaces:after {
+			content: "";
+			display: block;
+			height: 0;
+			padding-bottom: 64.97462%;
+		}
+
+		#uncoverWrap .findRelativesCon p#findRelText {
+			font-size: 22px;
+			padding: 10px 5px;
+			max-width: 550px;
+		}
+
+		#uncoverWrap .findRelativesCon small {
+			bottom: 0;
+			position: absolute;
+		}
+
+		#modalContents .modal#modalEthnicity {
+			padding: 10px 40px;
+			max-width: 900px;
+			min-width: 600px;
+		}
+
+		#modalEthnicity h3 {
+			font-size: 22px;
+			font-weight: 600;
+		}
+
+		#modalEthnicity .ethnicityMapBlobs {
+			background-image: url('images/ethnicity-map-blobs.jpg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height: 1px;
+			margin: 20px 0;
+			padding-top: 45%;
+			width: 100%;
+		}
+
+		#modalEthnicity ul {
+			padding-bottom: 30px;
+		}
+
+		#modalEthnicity ul li {
+			font-size: 19px;
+			line-height: 20px;
+			padding-bottom: 8px;
+			padding-left: 15px;
+			text-indent: -15px;
+		}
+
+		@media only screen and (max-width:1600px) {
+			.findRelativesGrid .findRelativesGridContent {
+				padding-top: 0;
+			}
+		}
+
+		@media only screen and (max-width:1300px) {
+
+			#uncoverWrap .ethnicityMap,
+			#uncoverWrap .ethnicityBlobs {
+				left: 30%;
+				right: auto;
+				width: 95%;
+			}
+		}
+
+		@media only screen and (max-width:1200px) {
+			#uncoverWrap h3 {
+				font-size: 50px;
+			}
+
+			#uncoverWrap .ethmixCon h3 {
+				max-width: 610px;
+			}
+		}
+
+		@media only screen and (max-width:1005px) {
+			#uncoverWrap #uncoverCon {
+				padding-top: 40px;
+			}
+
+			#uncoverWrap h3 {
+				font-size: 45px;
+				line-height: 55px;
+			}
+
+			#uncoverWrap .ethmixCon {
+				width: 60%;
+			}
+
+			#uncoverWrap .ethmixCon h3 {
+				max-width: 430px;
+			}
+
+			#uncoverWrap .ethmixCon h3 #ethnicPie {
+				top: 25px;
+			}
+
+			#uncoverWrap .findRelativesCon {
+				margin: 50px 0;
+			}
+
+			.findRelativesGrid .findRelativesGridContent {
+				padding: 0 0 0 35px;
+			}
+		}
+
+		@media only screen and (max-width:875px) {
+			#uncoverWrap .ethmixCon h3 #ethnicPie {
+				right: 70px;
+				top: 15px;
+			}
+
+			#uncoverWrap .findRelativesCon {
+				margin-bottom: 20px;
+			}
+
+			#uncoverWrap .ethmixCon p#ethnicText,
+			#uncoverWrap .findRelativesCon p#findRelText {
+				font-size: 20px;
+			}
+
+			.findRelativesFaces {
+				margin-top: 20px;
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+
+			#uncoverWrap .ethnicityMap,
+			#uncoverWrap .ethnicityBlobs {
+				left: 38%;
+			}
+
+			#uncoverWrap h3 {
+				font-size: 38px;
+				line-height: 50px;
+			}
+
+			#uncoverWrap .ethmixCon h3 {
+				padding-right: 140px;
+			}
+
+			#uncoverWrap .ethmixCon h3 #ethnicPie {
+				right: 100px;
+			}
+
+			#uncoverWrap .ethmixCon {
+				width: 80%;
+			}
+
+			#uncoverWrap .findRelativesCon {
+				margin-top: 30px;
+				padding-top: 0;
+			}
+		}
+
+		/* connect section styles */
+		#connectWrap {
+			background: #e6e4e1 url('images/dot-grid2.png') top center repeat-y;
+			overflow: hidden;
+			position: relative;
+		}
+
+		/*#connectWrap .connectScrollBg { background:#e6e4e1 url('https://www.ancestrycdn.com/mars/landing/dna/homepage/dot-grid2.png') top center repeat-y; background-attachment:fixed; bottom:0; display:block; height:100%; left:0; position:absolute; right:0; top:0; width:100%; }*/
+		#connectWrap #connectCon {
+			margin: auto;
+			padding: 50px 20px;
+			max-width: 1330px;
+			position: relative;
+			width: 100%;
+		}
+
+		#connectWrap h3 {
+			font-size: 60px;
+			font-weight: 200;
+			line-height: 65px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+
+		#connectWrap .connectText p {
+			font-size: 22px;
+			padding: 15px 30px 0 0;
+			max-width: 520px;
+		}
+
+		#connectWrap .proGenQuoteCon blockquote {
+			background-color: #cde6ed;
+			border-radius: 10px;
+			color: #14688d;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 200;
+			line-height: 48px;
+			padding: 25px 20px 25px 50px;
+			position: relative;
+			text-indent: -15px;
+		}
+
+		#connectWrap .proGenQuoteCon blockquote:after {
+			bottom: -40px;
+			border-bottom: 20px solid transparent;
+			border-left: 20px solid transparent;
+			border-right: 20px solid #cde6ed;
+			border-top: 20px solid #cde6ed;
+			content: "";
+			position: absolute;
+			left: 60px;
+		}
+
+		#connectWrap .proGenQuoteCon cite {
+			background-color: #fff;
+			color: #14688d;
+			display: block;
+			font-size: 25px;
+			line-height: 30px;
+			margin: 0 0 0 100px;
+			padding: 20px 0 20px 50px;
+		}
+
+		#connectWrap .proGenQuoteCon cite span {
+			font-size: 19px;
+		}
+
+		@media only screen and (max-width:1200px) {
+			#connectWrap .proGenQuoteCon blockquote {
+				font-size: 24px;
+				line-height: 38px;
+			}
+		}
+
+		@media only screen and (max-width:1005px) {
+			#connectWrap .proGenQuoteCon blockquote:after {
+				left: 40px;
+			}
+
+			#connectWrap .proGenQuoteCon cite {
+				margin-left: 70px;
+			}
+		}
+
+		@media only screen and (max-width:875px) {
+			#connectWrap h3 {
+				font-size: 55px;
+				margin-bottom: 20px;
+				padding-left: 50px;
+				text-align: left;
+			}
+
+			#connectWrap .connectText {
+				margin-bottom: 20px;
+				padding-left: 50px;
+				width: 90%;
+			}
+
+			#connectWrap .connectText p {
+				max-width: inherit;
+			}
+
+			#connectWrap .connectQuote {
+				width: 95%;
+			}
+
+			#connectWrap .proGenQuoteCon blockquote {
+				font-size: 36px;
+				line-height: 50px;
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			#connectWrap .proGenQuoteCon blockquote {
+				font-size: 30px;
+				line-height: 45px;
+			}
+		}
+
+		/* Brand Campaign styles */
+		#brandCampaign-wrapper {
+			background-color: #f0eee9;
+		}
+
+		#brandCampaign-wrapper #brandCampaign-con {
+			margin: auto;
+			padding: 50px 20px;
+			max-width: 1330px;
+			position: relative;
+			width: 100%;
+		}
+
+		#brandCampaign-wrapper h3 {
+			font-size: 60px;
+			font-weight: 200;
+			line-height: 65px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+
+		#brandCampaign-wrapper .brandText p {
+			font-size: 22px;
+			padding: 15px 30px 0 0;
+			max-width: 520px;
+		}
+
+		#brandCampaign-wrapper .brandQuote {
+			margin-top: 37px;
+		}
+
+		#brandCampaign-wrapper .brandBlade-legal {
+			text-align: center;
+		}
+
+		#brandCampaign-wrapper .brandBlade-legal small {
+			padding-top: 20px;
+		}
+
+		#brandCampaign-wrapper .proGenQuoteCon blockquote {
+			background-color: #cde6ed;
+			border-radius: 10px;
+			color: #14688d;
+			font-size: 36px;
+			font-style: normal;
+			font-weight: 200;
+			line-height: 48px;
+			padding: 25px 20px 25px 50px;
+			position: relative;
+			text-indent: -15px;
+		}
+
+		#brandCampaign-wrapper .proGenQuoteCon blockquote:after {
+			bottom: -40px;
+			border-bottom: 20px solid transparent;
+			border-left: 20px solid transparent;
+			border-right: 20px solid #cde6ed;
+			border-top: 20px solid #cde6ed;
+			content: "";
+			position: absolute;
+			left: 60px;
+		}
+
+		#brandCampaign-wrapper .proGenQuoteCon cite {
+			background-color: #fff;
+			color: #14688d;
+			display: block;
+			font-size: 25px;
+			line-height: 30px;
+			margin: 0 0 0 100px;
+			padding: 20px 0 20px 50px;
+		}
+
+		#brandCampaign-wrapper .proGenQuoteCon cite span {
+			font-size: 19px;
+		}
+
+		@media only screen and (max-width:1200px) {
+			#brandCampaign-wrapper .proGenQuoteCon blockquote {
+				font-size: 24px;
+				line-height: 38px;
+			}
+		}
+
+		@media only screen and (max-width:1005px) {
+			#brandCampaign-wrapper .proGenQuoteCon blockquote:after {
+				left: 40px;
+			}
+
+			#brandCampaign-wrapper .proGenQuoteCon cite {
+				margin-left: 70px;
+			}
+		}
+
+		@media only screen and (max-width:875px) {
+			#brandCampaign-wrapper h3 {
+				font-size: 55px;
+				margin-bottom: 20px;
+				padding-left: 50px;
+				text-align: left;
+			}
+
+			#brandCampaign-wrapper .brandText {
+				margin-bottom: 20px;
+				margin-top: 35px;
+				padding-left: 50px;
+				width: 90%;
+			}
+
+			#brandCampaign-wrapper .brandText p {
+				max-width: inherit;
+			}
+
+			#brandCampaign-wrapper .brandQuote {
+				margin-top: 0;
+				width: 95%;
+			}
+
+			#brandCampaign-wrapper .proGenQuoteCon blockquote {
+				font-size: 36px;
+				line-height: 50px;
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			#brandCampaign-wrapper .proGenQuoteCon blockquote {
+				font-size: 30px;
+				line-height: 45px;
+			}
+		}
+
+		/* video section styles */
+		.moreTxtToggle.iconArrowSmallDownAfter .lessLink,
+		.moreTxtToggle.iconArrowSmallUpAfter .moreLink {
+			display: none;
+		}
+
+		.noDecoLink {
+			background: 0 0;
+			border: none;
+			color: #44819d;
+			font-size: 15px;
+			text-transform: uppercase;
+		}
+
+		/* Testimonials Subsection styles - desktop */
+		#realLifeWrap {
+			background-color: #54524f;
+			padding: 50px 0 60px;
+		}
+
+		#realHeaderCon {
+			text-align: center;
+		}
+
+		#realStoriesCon {
+			margin: auto;
+			padding-top: 30px;
+			max-width: 1360px;
+		}
+
+		#realStoriesCon .storyCon {
+			background: #fff;
+			border-radius: 10px;
+			padding: 10px 0 0 10px;
+		}
+
+		#realStoriesCon .storySprite {
+			background: url('images/dnahp-stories-thumb-sprite.webp') no-repeat;
+			background-size: 299%;
+			border-radius: 5px;
+			padding: 190px 0 0;
+			max-width: 174px;
+			min-width: 124px;
+		}
+
+		#realStoriesCon .story1Img {
+			background-position: 0 0;
+		}
+
+		#realStoriesCon .story2Img {
+			background-position: 50% 0;
+		}
+
+		#realStoriesCon .story3Img {
+			background-position: 100% 0;
+		}
+
+		#realStoriesCon .ancBtn {
+			display: block;
+			margin: auto;
+			width: 130px;
+		}
+
+		#realStoriesCon .storyTextCon.ancCol {
+			padding-left: 15px;
+		}
+
+		#realStoriesCon .storyCon h4 {
+			color: #54524f;
+			font-size: 32px;
+			font-weight: 200;
+			line-height: 40px;
+		}
+
+		#realStoriesCon .storyCon p {
+			color: #54524f;
+			font-size: 16px;
+			line-height: 25px;
+		}
+
+		#realStoriesCon .ancBtn.underText {
+			display: none;
+			margin: 10px 0;
+		}
+
+		.dnas-whoami-img {
+			background: url('images/dnahp-stories-lrg-sprite.jpg') left top no-repeat;
+			height: 275px;
+			width: 445px;
+		}
+
+		.dnas-whoami-1 {
+			background-position: 0 0;
+		}
+
+		.dnas-whoami-2 {
+			background-position: 0 50%;
+		}
+
+		.dnas-whoami-3 {
+			background-position: 0 100%;
+		}
+
+		.realStoryQuote {
+			color: #999;
+			float: right;
+			text-indent: -8px;
+			width: 235px;
+		}
+
+		.realStoryQuote+p {
+			overflow: hidden;
+		}
+
+		@media only screen and (max-width:1300px) {
+			#realStoriesCon.ancGridEqual {
+				border-spacing: 10px 0;
+			}
+
+			#realStoriesCon .storyCon {
+				padding: 5px 0 0 5px;
+			}
+
+			#realStoriesCon .storySprite {
+				padding: 180px 0 0;
+			}
+
+			#realStoriesCon .storyCon h4 {
+				font-size: 27px;
+				line-height: 30px;
+			}
+
+			#realStoriesCon .storyCon p {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+		@media only screen and (max-width:875px) {
+			#realLifeWrap #realHeaderCon {
+				margin: auto;
+				max-width: 400px;
+			}
+
+			#realStoriesCon {
+				padding: 30px 90px 0;
+			}
+
+			#realStoriesCon .ancCol.w33 {
+				display: block;
+				width: 100%;
+			}
+
+			#realStoriesCon .storyTextCon.ancCol.full768,
+			#realStoriesCon .storyTextCon.full768>.ancCol {
+				clear: none;
+				margin-left: 30px;
+				margin-top: 0;
+				width: 50%;
+			}
+
+			#realStoriesCon .storyCon h4 {
+				font-size: 33px;
+				line-height: 35px;
+			}
+
+			#realStoriesCon .storyCon p {
+				font-size: 18px;
+			}
+
+			#realStoriesCon .ancBtn.underImg {
+				display: none;
+			}
+
+			#realStoriesCon .ancBtn.underText {
+				display: block;
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			#realStoriesCon {
+				padding: 30px 25px 0;
+			}
+
+			#realStoriesCon .storyTextCon.ancCol.full768,
+			#realStoriesCon .storyTextCon.full768>.ancCol {
+				margin-left: 0;
+				width: 60%;
+			}
+		}
+
+		/* FAQ section styles */
+		#dnaFaqWrap .faqAnswer {
+			display: none;
+		}
+
+		#dnaFaqWrap {
+			background-color: #f0eee9;
+			padding-bottom: 60px;
+		}
+
+		#dnaFaqWrap #dnaFaqHeaderCon {
+			padding: 50px 10px 20px;
+			text-align: center;
+		}
+
+		#dnaFaqWrap button.faqBtn {
+			background-color: #eaeaea;
+			border-bottom: 1px solid #64afca;
+			border-left: none;
+			border-right: none;
+			border-top: 1px solid #64afca;
+			margin-top: -1px;
+			font-size: 18px;
+			padding: 13px 30px;
+			text-align: left;
+			width: 100%;
+		}
+
+		#dnaFaqWrap .faqBtn.faqActive {
+			background-color: #fff;
+		}
+
+		#dnaFaqWrap .iconArrowRightAfter:after {
+			color: #64afca;
+			margin-left: -20px;
+		}
+
+		#dnaFaqWrap #seeAllFaqLink {
+			color: #64afca;
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+			margin: 50px 0 60px 40px;
+		}
+
+		#dnaFaqWrap #dnaFaqAnswersCon {
+			padding: 40px 7% 0;
+		}
+
+		#dnaFaqWrap #dnaFaqAnswersCon h5 {
+			color: #7a9c0f;
+			font-size: 50px;
+			font-weight: 200;
+			line-height: 70px;
+		}
+
+		#dnaFaqWrap #dnaFaqAnswersCon h5:before {
+			background: #03678a;
+			border-radius: 70px;
+			color: #fff;
+			font-size: 45px;
+			padding: 15px;
+		}
+
+		#dnaFaqWrap #dnaFaqAnswersCon p {
+			font-size: 18px;
+			line-height: 35px;
+			padding-top: 20px;
+		}
+
+		#dnaFaqWrap .faqAnswer.faqActive {
+			display: block;
+		}
+
+		@media only screen and (max-width:1005px) {
+			#dnaFaqWrap #dnaFaqAnswersCon h5 {
+				font-size: 40px;
+				line-height: 50px;
+			}
+
+			#dnaFaqWrap #dnaFaqAnswersCon h5:before {
+				border-radius: 60px;
+				font-size: 40px;
+				padding: 10px;
+			}
+
+			#dnaFaqWrap button.faqBtn {
+				font-size: 16px;
+				padding: 10px 20px;
+			}
+		}
+
+		@media only screen and (max-width:875px) {
+			#dnaFaqWrap {
+				padding-bottom: 45px;
+			}
+
+			#dnaFaqWrap #dnaFaqHeaderCon {
+				padding: 35px 10px 20px;
+			}
+
+			#dnaFaqWrap #seeAllFaqLink {
+				margin: 35px 0 40px 40px;
+			}
+
+			#dnaFaqWrap #dnaFaqAnswersCon {
+				padding: 30px 7% 0;
+			}
+		}
+
+		/* CTA banner styles */
+		.ctaBanner {
+			background-color: #fff;
+			padding: 12px;
+			text-align: center;
+			width: 100%;
+		}
+
+		.ctaBanner img {
+			display: inline-block;
+			max-width: 270px;
+			padding-right: 30px;
+			vertical-align: bottom;
+			width: 100%;
+		}
+
+		.ctaBanner h3 {
+			color: #54524f;
+			display: inline-block;
+			font-size: 30px;
+			font-weight: 400;
+			padding-bottom: 0;
+			padding-right: 20px;
+			vertical-align: middle;
+		}
+
+		.ctaBanner .ancBtn.lrg {
+			margin-top: 0;
+			vertical-align: middle;
+		}
+
+		#persistentCtaWrap {
+			bottom: 0;
+			position: fixed;
+			z-index: 1000;
+		}
+
+		@media only screen and (max-width:1005px) {
+			.ctaBanner img {
+				padding-right: 10px;
+				max-width: 190px;
+			}
+
+			.ctaBanner h3 {
+				font-size: 22px;
+				padding-right: 10px;
+			}
+		}
+	</style>
+	<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		window._dnaPricing = {}
+		window._dnaPricing.use = {
+			price: "¥699",
+			"path": "/t37261/rd.ashx",
+			"legal": "Price excludes delivery charges",
+		}
+		window._dnaPricing.insert = function (domStr) {
+			var aS = document.getElementsByTagName('script'),
+				ls = aS[aS.length - 1],
+				div = document.createElement('div');
+			div.innerHTML = domStr;
+			while (div.children.length > 0) {
+				ls.parentNode.appendChild(div.children[0]);
+			}
+		};
+		window.targetPageParams = function () {
+			return {
+				pageType: 'DNALP'
+			}
+		};
+		window.targetGlobalSettings = {
+			bodyHiddenStyle: 'body { opacity: 0 }',
+			bodyHidingEnabled: true
+		};
+	</script>
+</head>
+
+<body>
+	<div id="HeaderRegion">
+		<nav class="nav navLoggedOut navVersion21 navStandard" id="nav" aria-label="Main Menu"
+			data-nav-version="navVersion21">
+			<a href="#skipped-nav" class="hideVisually" id="navSkip">Skip Ancestry navigation</a>
+			<button type="button" class="link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow"
+				id="navMobile" aria-controls="navMobileMenu" aria-expanded="false"><span class="hideVisually">Main
+					Menu</span></button>
+			<a class="navLink navLogo" data-tracking-name="Logo" href="">
+				<img alt="Ancestry Home" height="21"
+					src="assets/ancestry-on-dark.svg" width="118">
+			</a>
+			<ul class="navMainMenu hide480">
+				<li><a class="navLink navMainLink navHome calloutTriggerNoArrow hide768 show480"
+						data-tracking-name="Home" href="" id="navHome"><span
+							id="navTitleHome">Home</span></a></li>
+				<li><a class="navLink navMainLink navTrees calloutTriggerNoArrow link initialized"
+						data-tracking-name="Family Trees" href="" id="navTrees"
+						aria-controls="navTreesMenu" aria-expanded="false"><span id="navTitleTrees">Family
+							Trees</span></a></li>
+				<li><a class="navLink navMainLink navSearch calloutTriggerNoArrow link initialized"
+						data-tracking-name="Search" href="" id="navSearch"
+						aria-controls="navSearchMenu" aria-expanded="false"><span id="navTitleSearch">Search</span></a>
+				</li>
+				<li><a class="navLink navMainLink navDna calloutTriggerNoArrow navLinkSelected"
+						data-tracking-name="AncestryDNA" href="" target="_self"
+						id="navDna" aria-current="page"><span id="navTitleDna">DNA</span></a></li>
+				<li><a class="navLink navMainLink navHelp calloutTriggerNoArrow link initialized"
+						data-tracking-name="Get Help" href="" rel="noreferrer"
+						id="navHelp" aria-controls="navHelpMenu" aria-expanded="false"><span
+							id="navTitleHelp">Help</span></a></li>
+				<li><a class="navLink navMainLink navExtras calloutTriggerNoArrow link initialized"
+						data-tracking-name="Extras" href="" rel="noreferrer" id="navExtras"
+						aria-controls="navExtrasMenu" aria-expanded="false"><span id="navTitleExtras">Extras</span></a>
+				</li>
+			</ul>
+
+			<ul class="navSecondaryMenu ">
+				<li id="navSubscriptionOptions"><a class="navLink navEmphasizedButton navSubscribeLink hide480"
+						href=""
+						data-tracking-name="Subscribe">Subscribe</a></li>
+				<li><a href=""
+						class="navLink navAccount" id="navAccount" data-tracking-name="Sign In">Sign In<span
+							class="iconAfter iconArrowRightAfter hide480"></span></a></li>
+			</ul>
+			<div class="navMobileMenu calloutDomContent" id="navMobileMenu">
+				<a class="calloutMenuTitle navMobileHome" data-tracking-name="Home" href=""
+					id="navMobileHome">Home</a>
+
+				<div class="navTreesMenu navSubMenu navMobileSubMenu" id="navTreesMenu">
+					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Family Trees</h5>
+					<ul>
+
+						<li><a href="" id="navLinkStartTree"
+								data-tracking-name="Start a new tree">Start a New Tree</a></li>
+						<li><a href="" id="navLinkUploadGedcom"
+								data-tracking-name="Upload a GEDCOM">Upload a GEDCOM</a></li>
+
+					</ul>
+				</div>
+
+
+				<div class="navSearchMenu navSubMenu navMobileSubMenu navVersion21" id="navSearchMenu">
+					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Search &amp; Browse</h5>
+					<ul>
+
+						<li><a href="" id="navLinkAllCategories"
+								data-tracking-name="All Categories">Search All Records</a></li>
+						<li><a href="" id="navLinkCensus"
+								data-tracking-name="Census &amp; Voter Lists">Census &amp; Electoral Rolls</a></li>
+						<li><a href="" id="navLinkBMD"
+								data-tracking-name="Birth, Marriage &amp; Death">Birth, Marriage &amp; Death, including
+								Parish</a></li>
+						<li><a href="" id="navLinkMilitary"
+								data-tracking-name="Military">Military</a></li>
+						<li><a href="" id="navLinkProbate"
+								data-tracking-name="Wills &amp; Probate">Wills &amp; Probate</a></li>
+						<li><a href="" id="navLinkImmigration"
+								data-tracking-name="Immigration &amp; Travel">Immigration &amp; Travel</a></li>
+						<li><a href="" id="navLinkSchoolAndChurch"
+								data-tracking-name="Schools, Directories &amp; Church Histories">Schools, Directories
+								&amp; Church Histories</a></li>
+						<li><a href=""
+								id="navLinkPublicMemberTrees" data-tracking-name="Public Member Trees">Public Member
+								Trees</a></li>
+						<li><a href=""
+								id="navLinkCardCatalog" data-tracking-name="Card Catalog">Card Catalogue</a></li>
+						<li><a href=""
+								id="navLinkMemberDirectory" data-tracking-name="Search Member Directory">Member
+								Directory</a></li>
+
+					</ul>
+				</div>
+
+				<a class="calloutMenuTitle navMobileDna" data-tracking-name="AncestryDNA"
+					href="" id="navMobileDna">DNA</a>
+
+				<div class="navHelpMenu navSubMenu navMobileSubMenu navVersion21" id="navHelpMenu">
+					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Get Help</h5>
+					<ul>
+
+						<li><a href="" rel="noreferrer" id="navLinkSupportHome"
+								data-tracking-name="Support">Support Centre</a></li>
+						<li><a href="" id="navLinkStartTracingAncestors"
+								data-tracking-name="Start tracing your ancestors">Start tracing your ancestors</a></li>
+						<li><a href="" id="navLinkMessageBoards"
+								data-tracking-name="Message Boards">Message Boards</a></li>
+						<li><a href="" id="navLinkCommunity"
+								data-tracking-name="Community">Community</a></li>
+						<li><a href="" rel="noreferrer"
+								id="navLinkExpert" data-tracking-name="Expert Assistance">Hire an Expert</a></li>
+
+					</ul>
+				</div>
+
+
+				<div class="navExtrasMenu navSubMenu navMobileSubMenu navVersion21" id="navExtrasMenu">
+					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Extras</h5>
+					<ul>
+
+						<li><a href="" id="navLinkWW1"
+								data-tracking-name="World War 1-100 years">World War 1-100 years</a></li>
+						<li><a href="" rel="noreferrer" id="navLinkMyCanvas"
+								data-tracking-name="Photo Books &amp; Posters">Photo Books &amp; Posters</a></li>
+						<li><a href="" rel="noreferrer"
+								id="navLinkProGen" data-tracking-name="ProGenealogists">ProGenealogists</a></li>
+						<li><a href="" id="navLinkAcademy"
+								data-tracking-name="Ancestry Academy">Ancestry Academy</a></li>
+						<li><a href="" id="navLinkGiftSub"
+								data-tracking-name="Give a Gift Subscription">Gift Memberships</a></li>
+						<li><a href="" id="navLinkAncestryLab"
+								data-tracking-name="Ancestry Lab">Ancestry Lab&nbsp;<span
+									class="badge badgeColor1 noDisplay" data-badge-id="17"
+									data-badge-expiration="2019-07-20T00:00:00-07:00">Updated</span></a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="skipped-nav"></div>
+		</nav>
+	</div>
+	<div class="mboxDefault">
+		<main id="dnaHomeMainPage">
+			<style id="hero-styles">
+				#BAUWrap {
+					background-color: #181a1c;
+				}
+
+				#BAUWrap #dnaHomeHeroSection .dnaHeroSubHdrBtns {
+					padding: 10px;
+					position: static;
+					text-align: center;
+					z-index: 10;
+				}
+
+				#BAUWrap .BAUBrandHero {
+					background: #181a1c url(images/backstory-brand-hero-m.jpg) no-repeat top center;
+					background-size: cover;
+					border-bottom: solid 6px #abda3b;
+					height: 327px;
+					padding: 0 40px;
+				}
+
+				#BAUWrap .BAUContentCon {
+					height: 100%;
+					position: relative;
+				}
+
+				#BAUWrap .BAUContentCon:before {
+					content: '';
+					background-color: #aada3a;
+					height: 40px;
+					display: block;
+					top: 0;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					width: 3px;
+					z-index: 0;
+				}
+
+				#BAUWrap .BAUContentCon:after {
+					background-color: #aada3a;
+					bottom: 0;
+					content: '';
+					display: block;
+					height: 100px;
+					left: 0;
+					margin: 0 auto;
+					position: absolute;
+					right: 0;
+					width: 3px;
+					z-index: 0;
+				}
+
+				#BAUWrap h1 {
+					font-size: 28px;
+					line-height: 1;
+					margin-top: 10px;
+				}
+
+				#BAUWrap h1:before {
+					background-color: #aada3a;
+					content: '';
+					display: block;
+					height: 3px;
+					left: 0;
+					margin: 0 auto;
+					position: absolute;
+					right: 0;
+					top: 40px;
+					width: 45px;
+					z-index: 0;
+				}
+
+				#BAUWrap .heading2 {
+					font-size: 40px;
+					text-transform: uppercase;
+				}
+
+				#BAUWrap .heroMobileButton {
+					align-items: center;
+					display: flex;
+					height: 52px;
+					justify-content: space-around;
+				}
+
+				#BAUWrap .priceTextCon {
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-orient: vertical;
+					-webkit-box-direction: normal;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					padding: 10px 0;
+				}
+
+				#BAUWrap .onlySpan {
+					display: block;
+					line-height: 1;
+					text-align: left;
+					text-transform: uppercase;
+				}
+
+				#BAUWrap .bigPrice {
+					font-size: 50px;
+					line-height: 0.8;
+				}
+
+				#BAUWrap .bigPrice sup {
+					font-size: .5em;
+				}
+
+				#BAUWrap .priceShipping {
+					display: block;
+				}
+
+				@media screen and (min-width:768px) {
+					#BAUWrap #dnaHomeHeroSection .dnaHeroSubHdrBtns {
+						position: absolute;
+						right: 30px;
+					}
+
+					#BAUWrap .dnaHeroSubHdrBtns .ancBtn:first-child {
+						margin-top: 0;
+					}
+
+					#BAUWrap .BAUBrandHero {
+						background-image: url(images/backstory-brand-hero-t.webp);
+						border-bottom: none;
+						height: 608px;
+						padding: 0 32px;
+					}
+
+					#BAUWrap .BAUContentCon {
+						width: 360px;
+					}
+
+					#BAUWrap .BAUContentCon:before {
+						height: 50px;
+						top: 50px;
+					}
+
+					#BAUWrap .BAUContentCon:after {
+						content: none;
+					}
+
+					#BAUWrap h1 {
+						font-size: 42px;
+					}
+
+					#BAUWrap h1:before {
+						top: 50px;
+						width: 55px;
+					}
+
+					#BAUWrap h1:after {
+						background-color: #aada3a;
+						bottom: 0;
+						content: '';
+						display: block;
+						height: 80px;
+						left: 0;
+						margin: 0 auto;
+						right: 0;
+						width: 3px;
+						z-index: 0;
+					}
+
+					#BAUWrap .heading2 {
+						font-size: 62px;
+					}
+
+					#BAUWrap .heroIntro {
+						font-size: 20px;
+					}
+
+					#BAUWrap .heroPricingCon {
+						margin: 0 auto;
+						width: 225px;
+					}
+
+					#BAUWrap .priceTextCon {
+						margin: 0 auto;
+						padding: 15px 0;
+						width: 90px;
+					}
+
+					#BAUWrap .bigPrice {
+						font-size: 50px;
+					}
+
+					#BAUWrap .heroCta:before {
+						content: '';
+						background-color: #aada3a;
+						height: 55px;
+						display: block;
+						top: 0;
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+						width: 3px;
+						z-index: 0;
+					}
+				}
+
+				@media screen and (min-width:1005px) {
+					#BAUWrap .BAUBrandHero {
+						background-image: url(images/backstory-brand-hero.jpg);
+						height: 750px;
+						padding: 0 85px;
+					}
+
+					#BAUWrap h1 {
+						font-size: 56px;
+					}
+
+					#BAUWrap h1:before {
+						top: 80px;
+						width: 85px;
+					}
+
+					#BAUWrap h1:after {
+						height: 50px;
+					}
+
+					#BAUWrap .heading2 {
+						font-size: 82px;
+					}
+
+					#BAUWrap .heroIntro {
+						font-size: 32px;
+					}
+
+					#BAUWrap .BAUContentCon {
+						width: 500px;
+					}
+
+					#BAUWrap .heroPricingCon {
+						width: 330px;
+					}
+
+					#BAUWrap .priceTextCon {
+						margin: 0 auto;
+						padding: 10px 0 20px;
+						width: 130px;
+					}
+
+					#BAUWrap .onlySpan {
+						font-size: 18px;
+					}
+
+					#BAUWrap .bigPrice {
+						font-size: 72px;
+					}
+
+					#BAUWrap .priceShipping {
+						font-size: 22px;
+					}
+
+					#BAUWrap .BAUContentCon:before {
+						height: 80px;
+						top: 80px;
+					}
+				}
+			</style>
+			<div class="desktopView" id="BAUWrap">
+				<section id="dnaHomeHeroSection">
+					<div class="dnaHeroSubHdrBtns clearfix">
+						<a class="ancBtn silver" href="">Activate a test</a>
+						<a class="ancBtn silver hide480" href="#dnaFaqWrap">FAQs</a>
+					</div>
+					<div class="BAUBrandHero">
+						<div class="BAUContentCon bgDark textCenter">
+							<h1><i>Your backstory is</i> <br><span class="bold heading2">in your DNA</span></h1>
+							<p class="heroIntro smallLineHeight">AncestryDNA® can <br class="show480">reveal <br
+									class="hide480">your heritage <br class="show480">and <br class="hide480">connect
+								you to <br class="show480">family <br class="hide480">past and present.</p>
+							<script>
+								window._dnaPricing.insert('\
+                                        <div class="heroPricingCon clearfix hide480">\
+                                            <div class="priceTextCon bold">\
+                                                <span id="desktopPrices" class="onlySpan textxsml">Only</span>\
+                                                <span class="bigPrice">' + _dnaPricing.use.price + '<sup>*</sup></span>\
+                                            </div>\
+                                            <div class="heroCta">\
+                                                <a href="" class="ancBtn blue full lrg" data-linkname="ORDER NOW" data-section="main_cta">Order your kit now</a>\
+                                            </div>\
+                                        </div>\
+                                        ');
+							</script>
+						</div>
+					</div>
+				</section>
+				<script>
+					window._dnaPricing.insert('\
+                        <a href="" class="bgColor8 heroMobileButton linked show480">\
+                            <span class="icon iconDna text4xlrg"></span>\
+                            <span class="bold textxsml">Buy now - only ' + _dnaPricing.use.price + '* </span>\
+                            <span class="ancBtn ancBtnIconOnly icon iconArrowRight ancBtnRnd"></span>\
+                        </a>');
+				</script>
+			</div>
+			<div class="hide480 desktopView">
+				<section id="getStartedWrap">
+					<div id="whatDnaBanner" class="text4xlrg bgDark">
+						<a href="#whatDnaBanner">
+							<h2>Get started in a few simple steps</h2>
+						</a>
+					</div>
+					<div class="ancGrid getStartedCon">
+						<div class="stepsCon ancCol w25 half768">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step1Img"></span></div>
+								<p class="stepsText text2xlrg">Order your complete kit with easy-to-follow instructions.
+								</p>
+							</div>
+						</div>
+						<div class="stepsCon ancCol w25 half768">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step2Img"></span></div>
+								<p class="stepsText text2xlrg">Return a small saliva sample in the prepaid envelope.</p>
+							</div>
+						</div>
+						<div class="stepsCon ancCol w25 half768">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step3Img"></span></div>
+								<p class="stepsText text2xlrg">Your DNA will be analysed at more than 700,000 genetic
+									markers.</p>
+							</div>
+						</div>
+						<div class="stepsCon ancCol w25 half768">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step4Img"></span></div>
+								<p class="stepsText text2xlrg">Within 6-8 weeks, expect an email with a link to your
+									online results.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="uncoverWrap">
+					<div class="ethnicityMap"></div>
+					<div class="ethnicityBlobs noDisplay"></div>
+					<div class="clearfix" id="uncoverCon">
+						<div class="ethmixCon">
+							<h3>Irish? Scandinavian? What are you?</h3>
+							<p id="ethnicText">AncestryDNA can estimate your origins to more than 500 regions around
+								the&nbsp;world.</p>
+							<p class="textxlrg" id="ethnicLink"><button class="ancLink" id="dnaRegionsMdlBtn"
+									type="button">See all regions</button><br />covered by the AncestryDNA test.</p>
+							<p class="textxsml bold"></p>
+						</div>
+						<div class="findRelativesCon">
+							<div class="ancGrid findRelativesGrid">
+								<div class="ancCol w50">
+									<div class="findRelativesFaces noDisplay"></div>
+								</div>
+								<div class="ancCol w50 findRelativesGridContent">
+									<h3 class="noTopSpacing">Connect with relatives you never knew you had.</h3>
+									<p id="findRelText">Once you've taken your test, we'll search our global network of
+										AncestryDNA members and identify the people who share your DNA. There's no limit
+										to what you might discover&mdash;together.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<style>
+						.regionListWrap {
+							height: 100%;
+							margin: 0 auto;
+							width: 100%;
+						}
+
+						.regionList {
+							-webkit-column-count: 3;
+							-moz-column-count: 3;
+							column-count: 3;
+							-webkit-column-gap: 40px;
+							-moz-column-gap: 40px;
+							column-gap: 40px;
+							margin: 20px 0;
+						}
+
+						.regionList ul li {
+							break-inside: avoid-column;
+							-webkit-column-break-inside: avoid;
+							max-width: 100%;
+							margin-left: 20px;
+							text-indent: -20px;
+						}
+
+						.regionList>ul,
+						.regionList hr {
+							margin-left: -20px;
+						}
+
+						.regionList hr {
+							border-bottom-color: #a1a09c;
+						}
+
+						.regionList h3 {
+							background-color: #534d46;
+							margin: 20px 0;
+							padding: 10px 20px;
+							text-transform: uppercase;
+						}
+
+						.regionList .spanAll {
+							-webkit-column-span: all;
+							-moz-column-span: all;
+							column-span: all;
+						}
+
+						@media (max-width:767px) {
+							.regionList {
+								-webkit-column-count: 2;
+								-moz-column-count: 2;
+								column-count: 2;
+							}
+						}
+
+						@media (max-width:479px) {
+							.regionList {
+								-webkit-column-count: 1;
+								-moz-column-count: 1;
+								column-count: 1;
+							}
+						}
+					</style>
+					<div class="modal" id="dnaRegionsModal">
+						<header class="modalHeader">
+							<h4 class="modalTitle">A Comprehensive List of AncestryDNA Regions</h4>
+						</header>
+						<div class="regionListWrap">
+							<ul class="regionList text2xlrg">
+								<li>
+									<h3 class="bgDark text4xlrg noTopSpacing spanAll">America</h3>
+									<ul>
+										<li>Native American-North,Central, South</li>
+										<li>Native American-Andean</li>
+										<li>New Mexico</li>
+										<li>Central &amp; Southern New Mexico</li>
+										<li>Northern &amp; Central New Mexico</li>
+										<li>Jalisco, Aguascalientes, Guanajuato &amp; Michoacán</li>
+										<li>Western &amp; Central Mexico</li>
+										<li>Central Mexico</li>
+										<li>Colima &amp; Western Michoacán</li>
+										<li>Jalisco</li>
+										<li>Northeastern Michoacán</li>
+										<li>Northwestern Michoacán</li>
+										<li>Chihuahua &amp; Durango</li>
+										<li>Chihuahua Altiplano</li>
+										<li>Durango</li>
+										<li>Northeastern Chihuahua &amp; Far West Texas</li>
+										<li>Northern Chihuahua &amp; Southwest New Mexico</li>
+										<li>Southeastern Chihuahua</li>
+										<li>Zacatecas &amp; Aguascalientes</li>
+										<li>Northwest Mexico &amp; the Southern California Coast</li>
+										<li>Baja Peninsula &amp; Southern California Coast</li>
+										<li>Sinaloa</li>
+										<li>Sonora &amp; Southern Arizona</li>
+										<li>Northeastern Mexico &amp; South Texas</li>
+										<li>Coahuila &amp; South Texas</li>
+										<li>Nuevo Leon, Tamaulipas &amp; South Texas</li>
+										<li>San Luis Potosi, Tamaulipas, Nuevo Leon &amp; South Texas</li>
+										<li>Tamaulipas, Nuevo Leon &amp; South Texas</li>
+										<li>Nuevo Leon, Northern Tamaulipas &amp; South Texas</li>
+										<li>Ecuador, Peru &amp; Chile</li>
+										<li>Nicaragua &amp; Costa Rica</li>
+										<li>Central America</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg">Africa</h3>
+									<ul>
+										<li>Northern Africa</li>
+										<li>Ivory Coast/Ghana</li>
+										<li>Benin/Togo</li>
+										<li>Cameroon, Congo and Southern Bantu Peoples</li>
+										<li>Mali</li>
+										<li>Nigeria</li>
+										<li>Senegal</li>
+										<li>Eastern Africa</li>
+										<li>Africa South-Central Hunter-Gatherers</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg spanAll">Europe</h3>
+									<ul>
+										<li>Baltic States</li>
+										<li>Northeast Italy, Croatia &amp; Bosnia and Herzegovina</li>
+										<li>Czech Republic, Slovakia, Poland &amp; Lithuania</li>
+										<li>Czech Republic</li>
+										<li>Lesser Poland</li>
+										<li>Lithuania</li>
+										<li>Malopolska &amp; Swietokrzyskie</li>
+										<li>Mazovia &amp; Lodz</li>
+										<li>Małopolska &amp; the Tatras</li>
+										<li>Pomerania</li>
+										<li>Poland, Slovakia, Hungary &amp; Romania</li>
+										<li>Eastern Hungary, Eastern Slovakia, Northwest Romania &amp; Western Ukraine
+										</li>
+										<li>Eastern Slovakia</li>
+										<li>Eastern Slovakia &amp; Southern Poland</li>
+										<li>Hungary &amp; Slovakia</li>
+										<li>
+											<hr>
+										</li>
+										<li>Ireland and Scotland</li>
+										<li>Ulster, Ireland</li>
+										<li>Derry &amp; Inishowen</li>
+										<li>Donegal East</li>
+										<li>Donegal Southwest</li>
+										<li>North Midlands</li>
+										<li>Ulster East</li>
+										<li>Connacht, Ireland</li>
+										<li>Connemara</li>
+										<li>Galway</li>
+										<li>Mayo &amp; Galway</li>
+										<li>Mayo &amp; Sligo</li>
+										<li>North Connacht</li>
+										<li>Munster, Ireland</li>
+										<li>Cork</li>
+										<li>Kerry</li>
+										<li>Limerick &amp; Kerry</li>
+										<li>Southern Ireland</li>
+										<li>West Cork</li>
+										<li>West Kerry</li>
+										<li>Scotland</li>
+										<li>Central Scotland &amp; Ulster, Ireland</li>
+										<li>Northeast &amp; Central Scotland</li>
+										<li>Scottish Highlands &amp; Eastern Nova Scotia</li>
+										<li>Scottish Highlands &amp; Nova Scotia</li>
+										<li>
+											<hr>
+										</li>
+										<li>Greece and the Balkans</li>
+										<li>Greece, Turkey &amp; Albania</li>
+										<li>Italy</li>
+										<li>Sicilians in Sicily &amp; Calabria</li>
+										<li>Sicilians in Sicily &amp; Reggio Calabria</li>
+										<li>Southern Italy</li>
+										<li>Calabria</li>
+										<li>Campania</li>
+										<li>Campania &amp; Basilicata</li>
+										<li>Campania &amp; Molise</li>
+										<li>Lazio &amp; Campania</li>
+										<li>Puglia</li>
+										<li>Salerno</li>
+										<li>Umbria, Abruzzo &amp; Lazio</li>
+										<li>Northern Italy</li>
+										<li>Sardinia</li>
+										<li>
+											<hr>
+										</li>
+										<li>Sweden</li>
+										<li>Norway</li>
+										<li>Götaland &amp; Svealand</li>
+										<li>Western Götaland &amp; Eastern Norway</li>
+										<li>Western Svealand</li>
+										<li>Western Norway</li>
+										<li>Hordaland &amp; Rogaland</li>
+										<li>Rogaland &amp; Vest-Agder</li>
+										<li>Sørlandet</li>
+										<li>Vestlandet</li>
+										<li>Central Norway</li>
+										<li>Hedmark &amp; Akershus</li>
+										<li>Trøndelag &amp; Hedmark</li>
+										<li>Eastern Norway</li>
+										<li>Buskerud &amp; Oppland</li>
+										<li>Østlandet</li>
+										<li>Østlandet &amp; Sør-Trøndelag</li>
+										<li>Østlandet &amp; Vestlandet</li>
+										<li>
+											<hr>
+										</li>
+										<li>England, Wales, and Northwest Europe</li>
+										<li>Northern England &amp; the Midland</li>
+										<li>East Midlands</li>
+										<li>West Midlands &amp; North West England</li>
+										<li>Yorkshire &amp; Pennines</li>
+										<li>Wales &amp; the West Midlands</li>
+										<li>North Wales</li>
+										<li>South Wales</li>
+										<li>West Midlands</li>
+										<li>Southern England</li>
+										<li>Devon &amp; Cornwall</li>
+										<li>East Anglia &amp; Essex</li>
+										<li>South East England</li>
+										<li>Northern England</li>
+										<li>
+											<hr>
+										</li>
+										<li>France</li>
+										<li>Germanic Europe</li>
+										<li>Germany, the Netherlands, Belgium &amp; Luxembourg</li>
+										<li>Western Germany, the Netherlands, Belgium &amp; Luxembourg</li>
+										<li>Netherlands</li>
+										<li>Northern Germany</li>
+										<li>Schleswig-Holstein &amp; Lower Saxony</li>
+										<li>Brandenburg &amp; Mecklenburg-Vorpommern</li>
+										<li>Germany &amp; the Midwestern United States</li>
+										<li>Alsace-Lorraine &amp; North Dakota</li>
+										<li>Baden-Württemberg &amp; the Dakotas</li>
+										<li>Saxony, Iowa &amp; Illinois</li>
+										<li>Hessen, Kansas &amp; Nebraska</li>
+										<li>Northwest Germany &amp; the Midwest</li>
+										<li>Northwest Germany, the Netherlands &amp; the Midwest</li>
+										<li>Southern Germany &amp; the Midwest</li>
+										<li>
+											<hr>
+										</li>
+										<li>European Jewish</li>
+										<li>Jewish Western &amp; Central Europe</li>
+										<li>Jewish Western Ukraine, Moldova &amp; Eastern Romania</li>
+										<li>Jewish Germany, the Netherlands, Belgium, and Luxembourg</li>
+										<li>Jewish Central &amp; Eastern Europe</li>
+										<li>Jewish Lithuania, Latvia &amp; Belarus</li>
+										<li>Jewish Poland, Slovakia, Hungary &amp; Moravia</li>
+										<li>Jewish Northeast Poland, Lithuania, Latvia &amp; West Belarus</li>
+										<li>Jewish Lithuania, Latvia, Ukraine &amp; Western Russia</li>
+										<li>
+											<hr>
+										</li>
+										<li>Portugal</li>
+										<li>Spain</li>
+										<li>Basque</li>
+										<li>Eastern Europe and Russia</li>
+										<li>Finland</li>
+										<li>Lakeland &amp; Lapland</li>
+										<li>Pohjanmaa</li>
+										<li>Western Finland &amp; Oulu</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg">Asia</h3>
+									<ul>
+										<li>Turkey and the Caucasus</li>
+										<li>Armenians</li>
+										<li>Middle East</li>
+										<li>Iran/Persia</li>
+										<li>Syrian-Lebanese</li>
+										<li>China</li>
+										<li>Korea and Northern China</li>
+										<li>Philippines &amp; Guam</li>
+										<li>Philippines</li>
+										<li>Japan</li>
+										<li>Central and Northern Asia</li>
+										<li>Balochistan</li>
+										<li>Burusho</li>
+										<li>Southeast Asia-Dai Tai</li>
+										<li>Southeast Asia-Vietnam</li>
+										<li>Southern Asia</li>
+										<li>Western and Central India</li>
+										<li>Pacific Islander</li>
+										<li>Melanesia</li>
+										<li>Polynesia</li>
+										<li>Hawaiʻi, Tonga &amp; Samoa</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg spanAll">European Migrations</h3>
+									<ul>
+										<li>Portuguese</li>
+										<li>Azores, Madeira &amp; Hawaii</li>
+										<li>Portugal &amp; Brazil</li>
+										<li>Azores &amp; San Francisco Bay Area</li>
+										<li>Madeira &amp; Hawaii</li>
+										<li>Central California Portuguese</li>
+										<li>Portuguese Islanders</li>
+										<li>Azores</li>
+										<li>
+											<hr>
+										</li>
+										<li>Mississippi &amp; Louisiana Settlers</li>
+										<li>South Mississippi &amp; Alabama Gulf Coast Settlers</li>
+										<li>South Central Mississippi Settlers</li>
+										<li>Southwest Mississippi Settlers</li>
+										<li>Mississippi-Louisiana Border Settlers</li>
+										<li>Central Louisiana Settlers</li>
+										<li>Southwest Mississippi &amp; Greater New Orleans Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Eastern North Carolina Settlers</li>
+										<li>North Carolina Coast &amp; Virginia Coastal Plains Settlers</li>
+										<li>Eastern North Carolina &amp; Tennessee-Kentucky Border Settlers</li>
+										<li>North Carolina, Virginia Coast &amp; Maryland Coast Settlers</li>
+										<li>Southeastern North Carolina Settlers</li>
+										<li>North Carolina Coast Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>South Carolina Settlers</li>
+										<li>South Alabama &amp; Florida Panhandle Settlers</li>
+										<li>South Carolina Midlands &amp; Coastal Plains Settlers</li>
+										<li>Carolina Sandhills &amp; Central Louisiana Settlers</li>
+										<li>Coastal Carolinas Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Georgia &amp; Florida Settlers</li>
+										<li>Coastal Georgia &amp; Northeast Florida Settlers</li>
+										<li>North &amp; Central Florida Settlers</li>
+										<li>Southeast Georgia Settlers</li>
+										<li>South Carolina, Georgia &amp; Northeast Florida Coast Settlers</li>
+										<li>Central Georgia Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Southern States Settlers</li>
+										<li>Central Georgia &amp; Central Alabama Settlers</li>
+										<li>Carolina Border Settlers</li>
+										<li>Central Alabama Settlers</li>
+										<li>Western South Carolina &amp; Central Mississippi/Alabama Settlers</li>
+										<li>Texas, Louisiana, Arkansas, Mississippi &amp; Tennessee Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Tennessee &amp; Southern States Settlers</li>
+										<li>East Tennessee &amp; Blue Ridge Mountains Settlers</li>
+										<li>West Tennessee Settlers</li>
+										<li>Upper Middle Tennessee Settlers</li>
+										<li>Western Kentucky &amp; Southern Illinois Settlers</li>
+										<li>Middle Tennessee Settlers</li>
+										<li>West Tennessee, Western Kentucky &amp; Virginia-North Carolina Piedmont
+											Settlers</li>
+										<li>West Tennessee, Arkansas &amp; Northeast Texas Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Northern Arkansas &amp; Middle Tennessee Settlers</li>
+										<li>Arkansas Wine Country Settlers</li>
+										<li>Tennessee Upper Cumberland Settlers </li>
+										<li>Northern Arkansas Settlers</li>
+										<li>Central Arkansas &amp; Tennessee Tri-State Area Settlers</li>
+										<li>Northwest Arkansas Settlers</li>
+										<li>Southeast Tennessee Settlers</li>
+										<li>Arkansas River Valley Settlers</li>
+										<li>Northeast Arkansas Settlers</li>
+										<li>Middle Tennessee &amp; Ozarks Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Western North Carolina Settlers</li>
+										<li>North Carolina Foothills &amp; Upstate South Carolina Settlers</li>
+										<li>Western North Carolina &amp; North Georgia Settlers</li>
+										<li>Great Smoky Mountains Settlers</li>
+										<li>Western North Carolina &amp; Northeastern Georgia Settlers</li>
+										<li>Northeast Georgia &amp; Upstate South Carolina Settlers</li>
+										<li>North Carolina Blue Ridge Mountains Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>North Alabama Settlers</li>
+										<li>Greater Atlanta, Georgia, Settlers</li>
+										<li>Southern Appalachia Settlers</li>
+										<li>Tennessee River Valley Settlers</li>
+										<li>Greater Birmingham, Alabama, Settlers</li>
+										<li>Northeast Mississippi &amp; West Central Alabama Settlers</li>
+										<li>Northwest Alabama Settlers</li>
+										<li>West Central Alabama Settlers</li>
+										<li>Northwest &amp; Central Alabama Settlers</li>
+										<li>Central Alabama Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Central North Carolina, Southeast Missouri &amp; Southern Illinois Settlers
+										</li>
+										<li>Central North Carolina Settlers</li>
+										<li>Southwestern North Carolina &amp; Southern Illinois Settlers</li>
+										<li>North Carolina Sandhills Settlers</li>
+										<li>Southeast Missouri Settlers</li>
+										<li>Carolina Piedmont Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Central Appalachia Settlers</li>
+										<li>Southern West Virginia Settlers</li>
+										<li>Southwestern Virginia &amp; Eastern Kentucky Settlers</li>
+										<li>Southwestern West Virginia Settlers</li>
+										<li>Virginia Blue Ridge Highlands Settlers</li>
+										<li>Southeastern Kentucky &amp; Southwestern Virginia Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Lower Midwest &amp; Virginia Settlers</li>
+										<li>Virginia Settlers</li>
+										<li>Potomac River Valley &amp; Central Kentucky Settlers</li>
+										<li>Lower Midwest Settlers</li>
+										<li>Shenandoah Valley &amp; Northern Virginia Settlers</li>
+										<li>Missouri Ozarks &amp; East Tennessee Settlers</li>
+										<li>Kentucky Cumberland Plateau Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>South Central Appalachia Settlers</li>
+										<li>Southwestern Virginia &amp; Northwestern North Carolina Settlers</li>
+										<li>North Carolina Piedmont Settlers</li>
+										<li>North Carolina High Country Settlers</li>
+										<li>Great Smoky &amp; Blue Mountains Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Eastern Kentucky &amp; Northeast Tennessee Settlers</li>
+										<li>Northeast Tennessee &amp; Southwestern Virginia Settlers</li>
+										<li>Appalachian Kentucky &amp; Virginia Settlers</li>
+										<li>Kentucky Eastern Pennyroyal &amp; Tennessee Upper Cumberland Settlers</li>
+										<li>Southeastern Kentucky &amp; Holston River Valley Settlers</li>
+										<li>Eastern Kentucky &amp; Southwestern Virginia Settlers</li>
+										<li>Southeastern Kentucky Settlers</li>
+										<li>Kentucky Eastern Pennyroyal Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Ohio River Valley, Indiana, Illinois &amp; Iowa Settlers</li>
+										<li>Upper Ohio River Valley Settlers</li>
+										<li>Western Ohio, Indiana, Illinois &amp; Southeast Iowa Settlers</li>
+										<li>West Virginia Settlers</li>
+										<li>Potomac River Valley Settlers</li>
+										<li>Central Ohio &amp; Potomac River Valley Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Mid-Atlantic States Settlers</li>
+										<li>Delmarva Peninsula Settlers</li>
+										<li>Maryland &amp; Delaware Settlers</li>
+										<li>Chesapeake Bay Settlers</li>
+										<li>New Jersey Settlers</li>
+										<li>Delaware Valley Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Pennsylvania Settlers</li>
+										<li>South Central Pennsylvania &amp; Western Maryland Settlers</li>
+										<li>Southeast Pennsylvania &amp; Ohio Settlers</li>
+										<li>Central Pennsylvania Settlers</li>
+										<li>Susquehanna River Valley Settlers</li>
+										<li>Poconos &amp; North Jersey Settlers</li>
+										<li>Western Pennsylvania Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Pennsylvania, Ohio &amp; Indiana Settlers</li>
+										<li>Southwest Pennsylvania &amp; Western Maryland Settlers</li>
+										<li>Pennsylvania Dutch Country Settlers</li>
+										<li>Northern Ohio Swiss Settlers</li>
+										<li>Alleghenies &amp; Northeast Indiana Settlers</li>
+										<li>South Pennsylvania &amp; Central Maryland Settlers</li>
+										<li>Pennsylvania Highlands Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Northeastern States Settlers</li>
+										<li>Rhode Island &amp; Southeastern Massachusetts Settlers</li>
+										<li>New England &amp; Eastern Great Lakes Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>New York Settlers</li>
+										<li>Metropolitan New York Settlers</li>
+										<li>Southeastern New York Settlers</li>
+										<li>New York City &amp; Long Island Settlers</li>
+										<li>Lower Hudson Valley &amp; North Jersey Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Mountain West Mormon Pioneers</li>
+										<li>
+											<hr>
+										</li>
+										<li>New England Settlers</li>
+										<li>Massachusetts, Vermont &amp; New Hampshire Settlers</li>
+										<li>Maine Settlers</li>
+										<li>Western New Brunswick &amp; Maine Coast Settlers</li>
+										<li>Nova Scotia &amp; Massachusetts Coast Settlers</li>
+										<li>Massachusetts, Vermont, Rhode Island &amp; Connecticut Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Saint Lawrence River French Settlers</li>
+										<li>Montreal &amp; Detroit French Settlers</li>
+										<li>Capitale-Nationale, Québec, French Settlers</li>
+										<li>Montérégie, Québec, French Settlers</li>
+										<li>Beauce, Québec, French Settlers</li>
+										<li>Québec Rouge River Valley French Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Acadians</li>
+										<li>Southwestern Louisiana Acadians</li>
+										<li>Greater New Orleans Acadians</li>
+										<li>Canadian Maritimes Acadians</li>
+										<li>East Central Louisiana Acadians</li>
+										<li>
+											<hr>
+										</li>
+										<li>Gaspé Peninsula, New Brunswick &amp; Maine French Settlers </li>
+										<li>Bas-Saint-Laurent &amp; Northern Maine French Settlers</li>
+										<li>New Brunswick &amp; Eastern Maine French Settlers </li>
+										<li>Gaspésie, New Brunswick &amp; Northern Maine French Settlers </li>
+										<li>
+											<hr>
+										</li>
+										<li>Newfoundland English Settlers</li>
+										<li>
+											<hr>
+										</li>
+										<li>Germans from Russia</li>
+										<li>
+											<hr>
+										</li>
+										<li>Spaniards, Cubans, Dominicans &amp; Venezuelans</li>
+										<li>Dominicans</li>
+										<li>Spaniards, Cubans &amp; Venezuelans</li>
+										<li>
+											<hr>
+										</li>
+										<li>South Africa</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg">North and South Migrations</h3>
+									<ul>
+										<li>Colombians</li>
+										<li>
+											<hr>
+										</li>
+										<li>Colombians &amp; Ecuadorians</li>
+										<li>
+											<hr>
+										</li>
+										<li>Puerto Ricans</li>
+										<li>Western Puerto Rico</li>
+										<li>Eastern Puerto Rico</li>
+										<li>Northwest Puerto Rico</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg">African Americans</h3>
+									<ul>
+										<li>Virginia &amp; Southern States African Americans</li>
+										<li>Northern &amp; Central Virginia African Americans</li>
+										<li>Southeastern Virginia African Americans</li>
+										<li>Southern States African Americans</li>
+										<li>
+											<hr>
+										</li>
+										<li>North Carolina African Americans</li>
+										<li>Mid-Atlantic Coast African Americans</li>
+										<li>Eastern North Carolina &amp; Southeast Virginia African Americans</li>
+										<li>Northeastern North Carolina &amp; Southeast Virginia African Americans</li>
+										<li>North Carolina Northern Coastal Plain African Americans</li>
+										<li>
+											<hr>
+										</li>
+										<li>Louisiana Creoles &amp; African Americans</li>
+										<li>Louisiana &amp; Mississippi Gulf Coast Creoles &amp; African Americans</li>
+										<li>Southern Louisiana Creoles &amp; African Americans</li>
+										<li>
+											<hr>
+										</li>
+										<li>Mississippi African Americans</li>
+										<li>
+											<hr>
+										</li>
+										<li>South Carolina African Americans</li>
+										<li>Carolina Midlands African Americans</li>
+										<li>Savannah River Basin African Americans</li>
+										<li>South Carolina-North Carolina Border African Americans</li>
+										<li>Georgia African Americans</li>
+										<li>North Carolina Coastal Plain African Americans</li>
+										<li>South Carolina Pee Dee Country African Americans</li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="bgDark text4xlrg">African Caribbeans</h3>
+									<ul>
+										<li>Greater Antilles African Caribbeans</li>
+										<li>Lesser Antilles, Jamaica, Puerto Rico &amp; Hispaniola African Caribbeans
+										</li>
+										<li>Mid-Atlantic States African Americans</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="connectWrap">
+					<div class="ancGrid" id="connectCon">
+						<h3>More people tested means more ways to connect.</h3>
+						<div class="ancCol w50 connectText">
+							<p>With more than 15 million people now in our database and the unique ability to connect
+								with Ancestry’s billions of historical records and millions of family trees, AncestryDNA
+								can help deliver the richest family stories—and solve the toughest family mysteries.</p>
+						</div>
+						<div class="ancCol w50 connectQuote">
+							<div class="proGenQuoteCon">
+								<blockquote>&ldquo;ProGenealogists recommends AncestryDNA as an indispensable tool for
+									family history discoveries.&rdquo;</blockquote>
+								<cite>Kyle Betit
+									<br /><span>Senior Genealogy Researcher</span>
+									<br /><span>ProGenealogists, an Ancestry Group Company</span>
+								</cite>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="realLifeWrap">
+					<div id="realHeaderCon" class="sectionHeader bgDark">
+						<h2>Read about some real-life discoveries.</h2>
+						<p>Learn how AncestryDNA has helped people see themselves in a whole new way.</p>
+					</div>
+					<div id="realStoriesCon" class="ancGrid ancGridEqual">
+						<div class="ancCol w33 conSecond">
+							<div id="story1Con" class="storyCon conBody">
+								<div class="storySprite story1Img ancCol w50 full768">
+									<button type="button" class="ancBtn silver underImg storyModalTriggerBtn"
+										data-modalcontentid="story1Modal">See her story</button>
+								</div>
+								<div class="storyTextCon ancCol w50 full768">
+									<h4>A serious ethnic mix</h4>
+									<p>Australian Ali Clemesha thought she knew her ethnic background, but her DNA
+										results revealed so much more with some exotic surprises.</p>
+									<button type="button" class="ancBtn silver underText storyModalTriggerBtn"
+										data-modalcontentid="story1Modal">See her story</button>
+								</div>
+							</div>
+						</div>
+						<div class="ancCol w33 conSecond">
+							<div id="story2Con" class="storyCon conBody">
+								<div class="storySprite story2Img ancCol w50 full768">
+									<button type="button" class="ancBtn silver underImg storyModalTriggerBtn"
+										data-modalcontentid="story2Modal">See his story</button>
+								</div>
+								<div class="storyTextCon ancCol w50 full768">
+									<h4>New Connections</h4>
+									<p>After Mark Carter found out about AncestryDNA, he discovered ancestors he never
+										knew existed.</p>
+									<button type="button" class="ancBtn silver underText storyModalTriggerBtn"
+										data-modalcontentid="story2Modal">See his story</button>
+								</div>
+							</div>
+						</div>
+						<div class="ancCol w33 conSecond">
+							<div id="story3Con" class="storyCon conBody">
+								<div class="storySprite story3Img ancCol w50 full768">
+									<button type="button" class="ancBtn silver underImg storyModalTriggerBtn"
+										data-modalcontentid="story3Modal">See her story</button>
+								</div>
+								<div class="storyTextCon ancCol w50 full768">
+									<h4>Connected beyond Colombia</h4>
+									<p>Isabel Rojas always identified with her Bogot&aacute; roots. But her DNA results
+										took her ancestry to unexpected places.</p>
+									<button type="button" class="ancBtn silver underText storyModalTriggerBtn"
+										data-modalcontentid="story3Modal">See her story</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal dna-whoami-modal textxlrg" id="story1Modal">
+						<div class="dnas-whoami-img dnas-whoami-1"></div>
+						<h5 class="text5xlrg">Ali Clemesha</h5>
+						<p>I am your typical looking Aussie girl, a blonde, blue eyed, surfer who grew up in the Eastern
+							Suburbs. Once I decided to do the AncestryDNA test, I waited eagerly for the results,
+							discussing it with my family, my co-workers and even my clients. When I received them, I was
+							very surprised.</p>
+						<blockquote class="realStoryQuote light smallLineHeight text5xlrg">&ldquo;My initial thought
+							after getting my results was, "Wow my ethnicity is a serious mix!"&rdquo;</blockquote>
+						<p>My dad’s side of the family is English, tracing back to the Norman Conquest. And my Mum’s
+							side is Italian and Maltese. I grew up very proud of my heritage, attending gatherings with
+							my huge Italian family and hearing stories from my Nonna. And I would bring my Mum’s
+							creative antipasto choices and foods like the Arabic dish Molokhia to school.</p>
+						<p>Before taking the AncestryDNA test, I truly believed I was made up of only Italian, Maltese
+							and British blood. I was surprised to find the strongest part of my ethnicity is actually
+							from Western Europe – and that my ethnic mix included traces from 10 different world
+							regions.</p>
+						<p>The biggest shock for me was that I was a small percentage North African. West Asian was also
+							something I certainly did not expect, honestly they were all a big surprise. It seems there
+							is a lot more to my heritage than I expected, which has really raised a number of questions
+							for me.</p>
+					</div>
+					<div class="modal dna-whoami-modal textxlrg" id="story2Modal">
+						<div class="dnas-whoami-img dnas-whoami-2"></div>
+						<h5 class="text5xlrg">Mark Carter</h5>
+						<p>Identity is an interesting concept. Many people like to believe that they define their own
+							identity. But in reality there’s much more to it than the decisions we make in our own
+							lives. For example, how much is nature and how much is nurture? How much are we defined by
+							the people around us? Or society, even?</p>
+						<blockquote class="realStoryQuote light smallLineHeight text5xlrg">&ldquo;I started considering
+							how much of my identity was defined by my family history.&rdquo;</blockquote>
+						<p>Having given these questions much thought, I thought a good starting point would be to look
+							back and start researching my own family history. When I was young I always thought I was
+							100% British. My Dad was born in Edgware and my mum in Hampshire. Of course, none of us are
+							truly 100% British and as I got older I learnt that my Dad had Russian great-grandparents on
+							one side and German on the other, and that my great grand-parents on my mother’s side were
+							Greek. So I suppose this is when I started considering how much of my identity was defined
+							by my family history.</p>
+						<p>When I found out about AncestryDNA, I thought this could be the perfect tool to pinpoint
+							where my family emigrated over the past few hundred years (AncestryDNA can actually go back
+							1000 years) and give me a focus where to take my search next. When I got the email that my
+							results were ready I felt like a kid on Christmas day. They revealed that I was only 40%
+							British, 25% German and 35% Greek. I’ve now focused my search on these three countries and
+							already discovered ancestors I never knew existed.</p>
+					</div>
+					<div class="modal dna-whoami-modal textxlrg" id="story3Modal">
+						<div class="dnas-whoami-img dnas-whoami-3"></div>
+						<h5 class="text5xlrg">Isabel Rojas</h5>
+						<p>People often look at me and wonder what I am. I&rsquo;ve always known I was a mix, like a
+							minestrone soup, and the more I&rsquo;ve found out about my family&rsquo;s past and
+							heritage, the more my own identity has changed and evolved.</p>
+						<blockquote class="realStoryQuote light smallLineHeight text5xlrg">&ldquo;People often look at
+							me and wonder what I&nbsp;am.&rdquo;</blockquote>
+						<p>I was born in NYC, the youngest of five kids. My parents and three older siblings were born
+							in Bogota, Colombia. My name implies Hispanico/Latino roots but when I&rsquo;m with my
+							Polynesian friends people always think I&rsquo;m Hawaiian or a mix of Polynesian and
+							something else. I recently attended a Nepali church service and people asked me what part of
+							Nepal I was from.</p>
+						<p>As my dad and I have begun to explore our genealogy over the past seven years or so,
+							we&rsquo;ve found that our family is largely from Spain, which is no big surprise.
+							Colombians have a wide range of ethnicities, which explains why many Colombians, including
+							my mother, have white or fair skin with blue eyes. My dad also suspects we have German
+							ancestry somewhere back there.</p>
+						<p>A friend of mine knew I had been working on my family history and bought me an AncestryDNA
+							kit for my birthday. My results were surprising to say the least. I discovered I&rsquo;m 35%
+							Native American, 5% African and 29% from the Iberian Peninsula. This has drastically
+							broadened the way I think about my identity and heritage. I feel connected to those parts of
+							the world now and I&rsquo;m excited to see how far back our records can go.</p>
+					</div>
+				</section>
+				<section id="dnaFaqWrap">
+					<div id="dnaFaqHeaderCon" class="sectionHeader">
+						<h2>AncestryDNA explained.</h2>
+						<p>Get answers to some common questions.</p>
+					</div>
+					<div id="dnaFaqMainCon" class="ancGrid">
+						<aside id="dnaFaqOptionsCon" class="ancCol w30">
+							<ul>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn1"
+										class="faqBtn active" data-number="1">What is AncestryDNA?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn4"
+										class="faqBtn" data-number="2">How do I take the&nbsp;test?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn2"
+										class="faqBtn" data-number="3">What do my results tell&nbsp;me?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn9"
+										class="faqBtn" data-number="4">How accurate is the&nbsp;test?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn6"
+										class="faqBtn" data-number="5">When can I expect to get
+										my&nbsp;results?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn8"
+										class="faqBtn" data-number="6">How do I see my&nbsp;results?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn11"
+										class="faqBtn" data-number="7">How can I give AncestryDNA as
+										a&nbsp;gift?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn12"
+										class="faqBtn" data-number="8">Will I have access to the
+										recipient’s&nbsp;results?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn13"
+										class="faqBtn" data-number="9">Can I ship a DNA kit directly to
+										someone&nbsp;else?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn7"
+										class="faqBtn" data-number="10">How secure &amp; private
+										is&nbsp;AncestryDNA?</button></li>
+								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn10"
+										class="faqBtn" data-number="11">Can a woman take this&nbsp;test?</button></li>
+
+							</ul>
+						</aside>
+						<div id="dnaFaqAnswersCon" class="ancCol w70">
+							<div id="faqAnswer1" class="faqAnswer faqActive">
+								<h5 class="icon iconDna">What is AncestryDNA?</h5>
+								<p>
+									AncestryDNA is a cutting edge DNA testing service that utilises some of the latest
+									autosomal testing technology to revolutionise the way you discover your family
+									history. This service combines advanced DNA science with the world’s largest online
+									family history resource to predict your genetic ethnicity and help you find new
+									family connections. It maps ethnicity going back multiple generations and provides
+									insight into such possibilities as: what region of Europe are my ancestors from, or
+									am I likely to have East Asian heritage? AncestryDNA can also help identify
+									relationships with unknown relatives through a dynamic list of DNA&nbsp;matches.
+								</p>
+							</div>
+							<div id="faqAnswer2" class="faqAnswer">
+								<h5 class="icon iconDna">How do I take the test?</h5>
+								<p>
+									AncestryDNA is a simple saliva test you can do in the comfort of your own home. Once
+									you order, you will receive the AncestryDNA kit in the mail in a matter of days.
+									Your AncestryDNA kit includes full instructions, a saliva collection tube, and a
+									pre-paid return mailer (so you don't have additional costs to return your DNA.)
+									After returning your sample by just dropping it in the mail, your DNA is processed
+									at the lab. You then receive an email notifying you that your results are ready to
+									explore on the AncestryDNA&nbsp;website.
+								</p>
+							</div>
+							<div id="faqAnswer3" class="faqAnswer">
+								<h5 class="icon iconDna">What do my results tell me?</h5>
+								<p>
+									Your AncestryDNA results include information about your ethnicity across 500 regions
+									and identifies potential relatives through DNA matching to others who have taken the
+									AncestryDNA test. Your results are a great starting point for more family history
+									research, and it can also be a way to dig even deeper into the research you’ve
+									already&nbsp;done.
+								</p>
+							</div>
+							<div id="faqAnswer4" class="faqAnswer">
+								<h5 class="icon iconDna">How accurate is the&nbsp;test?</h5>
+								<p>
+									The AncestryDNA test uses microarray-based autosomal DNA testing, which surveys a
+									person’s entire genome at over 700,000 locations, all with a simple saliva sample.
+									Additionally, the new online interface integrates state-of-the-art tools for you to
+									utilise your DNA results for family history&nbsp;research.
+								</p>
+							</div>
+							<div id="faqAnswer5" class="faqAnswer">
+								<h5 class="icon iconDna">When can I expect to get my&nbsp;results?</h5>
+								<p>
+									Your AncestryDNA test results will normally take about 6-8 weeks to process from the
+									time that the lab receives your DNA sample. Please note that you must also activate
+									your DNA kit online in order to begin&nbsp;processing.
+								</p>
+							</div>
+							<div id="faqAnswer6" class="faqAnswer">
+								<h5 class="icon iconDna">How do I see my&nbsp;results?</h5>
+								<p>
+									When your AncestryDNA results are ready, you will receive an email from AncestryDNA
+									notifying you, with a link to view your results. Your results will also be available
+									online in your password-protected AncestryDNA&nbsp;account.
+								</p>
+							</div>
+							<div id="faqAnswer7" class="faqAnswer">
+								<h5 class="icon iconDna">How can I give AncestryDNA as a&nbsp;gift?</h5>
+								<p>
+									Giving AncestryDNA couldn’t be easier. Simply order a kit online, create your
+									Ancestry account to track your order, and have the kit shipped to either you or the
+									recipient. When they open the box, they’ll find clear instructions on how to take
+									the test, open their free account, and activate the kit&nbsp;online.
+								</p>
+							</div>
+							<div id="faqAnswer8" class="faqAnswer">
+								<h5 class="icon iconDna">Will I have access to the recipient’s&nbsp;results?</h5>
+								<p>
+									You will only have access to the recipient’s results if the recipient chooses to
+									share their results with you. As privacy and security are of the utmost importance
+									here at Ancestry, only the person who has taken the test may decide whether or not
+									to share their results. When activating their kit, they will be given the option to
+									share their results with the person who purchased the kit. They can also choose to
+									share with other Ancestry members via the DNA Settings&nbsp;page.
+								</p>
+							</div>
+							<div id="faqAnswer9" class="faqAnswer">
+								<h5 class="icon iconDna">Can I ship a DNA kit directly to someone&nbsp;else?</h5>
+								<p>
+									Absolutely. When placing your order, you can choose to have the kit shipped either
+									to you or to the&nbsp;recipient.
+								</p>
+							</div>
+							<div id="faqAnswer10" class="faqAnswer">
+								<h5 class="icon iconDna">How secure and private is&nbsp;AncestryDNA?</h5>
+								<p>
+									Your privacy is very important to us and we are committed to protecting your DNA.
+									For more information on privacy at AncestryDNA, please review the AncestryDNA
+									Privacy Statement. For a more general discussion of privacy on the Ancestry family
+									of websites, see the Ancestry Privacy&nbsp;Center.
+								</p>
+							</div>
+							<div id="faqAnswer11" class="faqAnswer">
+								<h5 class="icon iconDna">Can a woman take this&nbsp;test?</h5>
+								<p>
+									Yes, both women and men can use AncestryDNA since we all carry the DNA that is being
+									tested. In fact, men and women are tested in the same way for the same number of
+									markers. Unlike some other DNA tests, which only analyse the Y-chromosome (and can
+									only be taken by a male to look at your direct paternal lineage) or mitochondrial
+									DNA (can be taken by a male or female but only looks at your direct maternal
+									lineage), AncestryDNA looks at a person’s entire genome at over
+									700,000&nbsp;locations.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="bottomCtaWrap" class="ctaBanner">
+					<img src="assets/ancestry-dna.svg" alt="AncestryDNA">
+					<h3 class="noTopSpacing">中国最专业的DNA鉴定机构</h3>
+					<script>
+						window._dnaPricing.insert(
+							'\
+                            <a href="" class="ancBtn lrg orderDnaBtns" data-linkname="ORDER NOW" data-section="main_cta">联系我</a>'
+							);
+					</script>
+				</section>
+				<section id="persistentCtaWrap" class="ctaBanner noDisplay">
+					<img src="assets/ancestry-dna.svg" alt="AncestryDNA">
+					<h3 class="noTopSpacing">中国最专业的DNA鉴定机构</h3>
+					<script>
+						window._dnaPricing.insert(
+							'\
+                            <a href="" class="ancBtn lrg orderDnaBtns" data-linkname="ORDER NOW" data-section="main_cta">联系我</a>'
+							);
+					</script>
+				</section>
+			</div>
+			<div class="show480 mobileView">
+				<section id="aboutDnaWrapPortrait" class="bgDark textCenter clear">
+					<div class="aboutDnaHeadlineWrap">
+						<h2 class="aboutDnaTitle topSpacingBlock">AncestryDNA&mdash;The World's Largest Consumer DNA
+							Database.</h2>
+						<p class="text2xlrg">Get started in a few simple steps.</p>
+					</div>
+					<div class="ancGrid getStartedCon">
+						<div class="stepsCon ancCol w25 half768 full320">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step1Img"></span></div>
+								<p class="stepsText coloralt4 text2xlrg">Order your complete kit with easy-to-follow
+									instructions.</p>
+							</div>
+						</div>
+						<div class="stepsCon ancCol w25 half768 full320">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step2Img"></span></div>
+								<p class="stepsText coloralt4 text2xlrg">Return a small saliva sample in the
+									prepaid&nbsp;envelope.</p>
+							</div>
+						</div>
+						<div class="stepsCon ancCol w25 half768 full320">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step3Img"></span></div>
+								<p class="stepsText coloralt4 text2xlrg">Your DNA will be analysed at more than 700,000
+									genetic&nbsp;markers.</p>
+							</div>
+						</div>
+						<div class="stepsCon ancCol w25 half768 full320">
+							<div class="stepsWrap">
+								<div class="stepsBubble"><span class="dnaV3Sprite step4Img"></span></div>
+								<p class="stepsText coloralt4 text2xlrg">Within 6-8 weeks, expect an email with a link
+									to your online&nbsp;results.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+	<footer class="dnaHomeFooter textxsml">
+		<ul class="textCenter hide480">
+			<li><a href="" target="_blank">AncestryDNA Privacy
+					<span class="hide480">Statement</span>&nbsp;
+				</a></li>
+			<li><a href="" target="_blank">AncestryDNA <span class="hide480">Terms and Conditions</span><span
+						class="show480">T&amp;C</span>&nbsp;
+				</a></li>
+			<li><a href="" target="_blank">Informed
+					Consent</a></li>
+			<li><a href="" target="_blank">FAQ</a></li>
+		</ul>
+		<ul class="textCenter show480">
+			<li><a href="" target="_blank">AncestryDNA Privacy
+					<span class="hide480">Statement</span></a></li>
+			<li><a href="" target="_blank">AncestryDNA <span class="hide480">Terms and Conditions</span><span
+						class="show480">T&amp;C</span></a></li>
+		</ul>
+		<ul class="textCenter show480">
+			<li><a href="" target="_blank">Informed
+					Consent</a></li>
+			<li><a href="" target="_blank">FAQ</a></li>
+		</ul>
+	</footer>
+	<div id="FooterRegion" class="footer2"></div>
+	<script>
+		setTimeout(function () {
+			'use strict';
+			if (document.getElementById('persistentCtaWrap')) {
+				var $window = $(window),
+					$desktopView = $('.desktopView'),
+					isScrollEventBound = false,
+					isFadeComplete = false;
+
+				function throttle(callback, delay, noTrail, immediate) {
+					var timeout,
+						previous = 0,
+						result = function () {
+							var self = this,
+								elapsed = Date.now() - previous,
+								args = arguments,
+								timeoutCallback,
+								timeoutDelay;
+
+							function reset() {
+								timeout = undefined;
+							}
+
+							function execute() {
+								previous = Date.now();
+								callback.apply(self, args);
+							}
+							if (immediate && !timeout) {
+								execute();
+							}
+							if (timeout) {
+								clearTimeout(timeout);
+							}
+							if (immediate === undefined && elapsed > delay) {
+								execute();
+							} else if (noTrail !== true) {
+								timeoutCallback = immediate ? reset : execute;
+								timeoutDelay = immediate === undefined ? delay - elapsed : delay;
+								timeout = setTimeout(timeoutCallback, timeoutDelay);
+							}
+						};
+					return result;
+				}
+
+				function persistentCta(event) {
+					if (event && !isScrollEventBound) {
+						isScrollEventBound = true;
+					}
+					var scrollTop = $window.scrollTop();
+					if (scrollTop < 500) {
+						$('#persistentCtaWrap').addClass('noDisplay');
+						return;
+					}
+					var docHeight = $(document).height(),
+						scrollBottom = docHeight - $window.height() - scrollTop,
+						bottomOffset = docHeight - $('#bottomCtaWrap').offset().top;
+					if (scrollBottom >= bottomOffset) {
+						$('#persistentCtaWrap').removeClass('noDisplay');
+					} else {
+						$('#persistentCtaWrap').addClass('noDisplay');
+					}
+				}
+
+				function fadeInEthnicRegions(event) {
+					if (isFadeComplete) {
+						$window.off('scroll.ethnicregion');
+						return;
+					}
+					if (event && !isScrollEventBound) {
+						isScrollEventBound = true;
+					}
+					var windowBottom = $window.scrollTop() + $window.innerHeight(),
+						mapOffset = $('.ethnicityMap').offset().top,
+						$ethnicityBlobs = $('.ethnicityBlobs'),
+						$findRelativesFaces = $('.findRelativesFaces');
+					if (windowBottom < mapOffset) {
+						return;
+					} else {
+						$ethnicityBlobs.removeClass('noDisplay');
+						$findRelativesFaces.removeClass('noDisplay');
+						var objectBottom = $ethnicityBlobs.offset().top + $ethnicityBlobs.outerHeight();
+						if (objectBottom < windowBottom) {
+							if ($ethnicityBlobs.css('opacity') == 0) {
+								isFadeComplete = true;
+								$window.off('scroll.ethnicregion');
+								$ethnicityBlobs.fadeTo(500, 1);
+							}
+						}
+					}
+				}
+				if ($desktopView.is(':visible')) {
+					persistentCta();
+					$window
+						.on('scroll.persistentcta', throttle(persistentCta, 200))
+						.on('load.ethnicitymap', function () {
+							fadeInEthnicRegions();
+							$window.on('scroll.ethnicregion', throttle(fadeInEthnicRegions, 200));
+						});
+				}
+				// animate scroll to target
+				$('#dnaHomeMainPage a[href^="#"]').on('click.animatescroll', function (e) {
+					e.preventDefault();
+					var target = this.hash,
+						$target = $(target);
+					$('html, body').stop().animate({
+						'scrollTop': $target.offset().top
+					}, 800, 'swing', function () {
+						window.location.hash = target;
+					});
+				});
+				// testimonial tabs
+				function testimonialTabs() {
+					var $this = $(this);
+					if ($this.hasClass('activeThumb')) {
+						return;
+					}
+					var contentid = '.' + $this.data('contentid');
+					$this.addClass('activeThumb').siblings('.testimonialThumb').removeClass('activeThumb');
+					$('.testimonialsCon').find(contentid).addClass('activeTestimonial').siblings().removeClass(
+						'activeTestimonial');
+				}
+				$('.testimonialThumb').on('click.tabtestimonial', throttle(testimonialTabs, 200, undefined, true));
+				// Modal Scripts
+				$('#dnaRegionsMdlBtn').on('click', function (e) {
+					$('#dnaRegionsModal').modal({
+						$trigger: $('#dnaRegionsMdlBtn'),
+						width: 990 //,
+					});
+				});
+				$('.storyModalTriggerBtn').on('click.storymodal', function () {
+					var $this = $(this),
+						contentid = '#' + $this.data('modalcontentid');
+					$(contentid).modal({
+						'width': 800,
+						'$trigger': $this
+					});
+				});
+				$('#modalFindRelVidBtn').on('click.relativemodal', function (e) {
+					var $this = $(this);
+					$('<div><iframe width="750" height="500" src="https://www.youtube.com/embed/8wBVFoK7UVU?autoplay=1" frameborder="0" allowfullscreen></iframe></div>')
+						.modal({
+							'width': 800,
+							'showLoading': false,
+							'$trigger': $this
+						});
+				});
+
+				function faqTabs() {
+					var $this = $(this);
+					if ($this.hasClass('faqActive')) {
+						return;
+					}
+					var faqNumb = $(this).attr('data-number');
+					$('.faqBtn').removeClass('faqActive');
+					$(this).addClass('faqActive');
+					$('.faqAnswer').removeClass('faqActive');
+					$('#faqAnswer' + faqNumb).addClass('faqActive');
+				}
+				$('.faqBtn').on('click.faqtabs', throttle(faqTabs, 200, undefined, true));
+
+				function dnaResponsive() {
+					if (!$desktopView.is(':visible')) {
+						$window.off('scroll.persistentcta scroll.ethnicregion');
+						isScrollEventBound = false;
+					} else if (!isScrollEventBound) {
+						$window
+							.on('scroll.persistentcta', throttle(persistentCta, 200))
+							.on('scroll.ethnicregion', throttle(fadeInEthnicRegions, 200));
+					}
+				}
+				dnaResponsive();
+				$window.on('resize.dnaresponsive', throttle(dnaResponsive, 200));
+
+			}
+		}, 3000);
+	</script>
+</body>
+
+</html>
