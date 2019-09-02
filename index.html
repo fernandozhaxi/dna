@@ -2,7 +2,7 @@
 <html class="r">
 
 <head>
-	<title>AncestryDNA&reg; | DNA Tests for Ethnicity &amp; Genealogy DNA Test</title>
+	<title>中国DNA鉴定中心</title>
 	<meta name="description"
 		content="AncestryDNA&reg; is the newest DNA test which helps you find genetic relatives and expand your genealogy research. Order your DNA test kit today.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1577,156 +1577,43 @@
 				ls.parentNode.appendChild(div.children[0]);
 			}
 		};
-		window.targetPageParams = function () {
-			return {
-				pageType: 'DNALP'
-			}
-		};
-		window.targetGlobalSettings = {
-			bodyHiddenStyle: 'body { opacity: 0 }',
-			bodyHidingEnabled: true
-		};
 	</script>
 </head>
 
 <body>
+	<!-- 顶部菜单 -->
 	<div id="HeaderRegion">
 		<nav class="nav navLoggedOut navVersion21 navStandard" id="nav" aria-label="Main Menu"
 			data-nav-version="navVersion21">
 			<a href="#skipped-nav" class="hideVisually" id="navSkip">Skip Ancestry navigation</a>
-			<button type="button" class="link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow"
-				id="navMobile" aria-controls="navMobileMenu" aria-expanded="false"><span class="hideVisually">Main
+			<button type="button"
+				class="link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow calloutTrigger initialized"
+				id="navMobile" aria-controls="navMobileMenu" ><span class="hideVisually">Main
 					Menu</span></button>
-			<a class="navLink navLogo" data-tracking-name="Logo" href="">
-				<img alt="Ancestry Home" height="21"
-					src="assets/ancestry-on-dark.svg" width="118">
+			<a class="navLink navLogo" href="">
+				<img alt="Ancestry Home" height="21" src="assets/ancestry-on-dark.svg" width="118">
 			</a>
 			<ul class="navMainMenu hide480">
-				<li><a class="navLink navMainLink navHome calloutTriggerNoArrow hide768 show480"
-						data-tracking-name="Home" href="" id="navHome"><span
-							id="navTitleHome">Home</span></a></li>
-				<li><a class="navLink navMainLink navTrees calloutTriggerNoArrow link initialized"
-						data-tracking-name="Family Trees" href="" id="navTrees"
-						aria-controls="navTreesMenu" aria-expanded="false"><span id="navTitleTrees">服务
-							内容</span></a></li>
-				<li><a class="navLink navMainLink navSearch calloutTriggerNoArrow link initialized"
-						data-tracking-name="Search" href="" id="navSearch"
-						aria-controls="navSearchMenu" aria-expanded="false"><span id="navTitleSearch">Search</span></a>
-				</li>
 				<li><a class="navLink navMainLink navDna calloutTriggerNoArrow navLinkSelected"
-						data-tracking-name="AncestryDNA" href="" target="_self"
-						id="navDna" aria-current="page"><span id="navTitleDna">DNA</span></a></li>
-				<li><a class="navLink navMainLink navHelp calloutTriggerNoArrow link initialized"
-						data-tracking-name="Get Help" href="" rel="noreferrer"
-						id="navHelp" aria-controls="navHelpMenu" aria-expanded="false"><span
-							id="navTitleHelp">Help</span></a></li>
+						href="#dnaHomeHeroSection" id="navTitle001"
+						aria-current="page">DNA</a></li>
+				<li><a class="navLink navMainLink navProgress calloutTriggerNoArrow link initialized"
+						href="#getStartedWrap" id="navTitle002"
+						>步骤</a></li>
+				<li><a class="navLink navMainLink navRelation calloutTriggerNoArrow link initialized"
+						href="#uncoverWrap" id="navTitle003"
+						>链接</a>
+				</li>
 				<li><a class="navLink navMainLink navExtras calloutTriggerNoArrow link initialized"
-						data-tracking-name="Extras" href="" rel="noreferrer" id="navExtras"
-						aria-controls="navExtrasMenu" aria-expanded="false"><span id="navTitleExtras">Extras</span></a>
+						href="#dnaFaqWrap" id="navTitle004"
+						>帮助</a>
 				</li>
 			</ul>
 
 			<ul class="navSecondaryMenu ">
-				<li id="navSubscriptionOptions"><a class="navLink navEmphasizedButton navSubscribeLink hide480"
-						href=""
-						data-tracking-name="Subscribe">Subscribe</a></li>
-				<li><a href=""
-						class="navLink navAccount" id="navAccount" data-tracking-name="Sign In">Sign In<span
+				<li><a href="" class="navLink navAccount" id="navAccount" >Sign In<span
 							class="iconAfter iconArrowRightAfter hide480"></span></a></li>
 			</ul>
-			<div class="navMobileMenu calloutDomContent" id="navMobileMenu">
-				<a class="calloutMenuTitle navMobileHome" data-tracking-name="Home" href=""
-					id="navMobileHome">Home</a>
-
-				<div class="navTreesMenu navSubMenu navMobileSubMenu" id="navTreesMenu">
-					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">服务内容</h5>
-					<ul>
-
-						<li><a href="" id="navLinkStartTree"
-								data-tracking-name="Start a new tree">内容1</a></li>
-						<li><a href="" id="navLinkUploadGedcom"
-								data-tracking-name="Upload a GEDCOM">内容2</a></li>
-
-					</ul>
-				</div>
-
-
-				<div class="navSearchMenu navSubMenu navMobileSubMenu navVersion21" id="navSearchMenu">
-					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Search &amp; Browse</h5>
-					<ul>
-
-						<li><a href="" id="navLinkAllCategories"
-								data-tracking-name="All Categories">Search All Records</a></li>
-						<li><a href="" id="navLinkCensus"
-								data-tracking-name="Census &amp; Voter Lists">Census &amp; Electoral Rolls</a></li>
-						<li><a href="" id="navLinkBMD"
-								data-tracking-name="Birth, Marriage &amp; Death">Birth, Marriage &amp; Death, including
-								Parish</a></li>
-						<li><a href="" id="navLinkMilitary"
-								data-tracking-name="Military">Military</a></li>
-						<li><a href="" id="navLinkProbate"
-								data-tracking-name="Wills &amp; Probate">Wills &amp; Probate</a></li>
-						<li><a href="" id="navLinkImmigration"
-								data-tracking-name="Immigration &amp; Travel">Immigration &amp; Travel</a></li>
-						<li><a href="" id="navLinkSchoolAndChurch"
-								data-tracking-name="Schools, Directories &amp; Church Histories">Schools, Directories
-								&amp; Church Histories</a></li>
-						<li><a href=""
-								id="navLinkPublicMemberTrees" data-tracking-name="Public Member Trees">Public Member
-								Trees</a></li>
-						<li><a href=""
-								id="navLinkCardCatalog" data-tracking-name="Card Catalog">Card Catalogue</a></li>
-						<li><a href=""
-								id="navLinkMemberDirectory" data-tracking-name="Search Member Directory">Member
-								Directory</a></li>
-
-					</ul>
-				</div>
-
-				<a class="calloutMenuTitle navMobileDna" data-tracking-name="AncestryDNA"
-					href="" id="navMobileDna">DNA</a>
-
-				<div class="navHelpMenu navSubMenu navMobileSubMenu navVersion21" id="navHelpMenu">
-					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Get Help</h5>
-					<ul>
-
-						<li><a href="" rel="noreferrer" id="navLinkSupportHome"
-								data-tracking-name="Support">Support Centre</a></li>
-						<li><a href="" id="navLinkStartTracingAncestors"
-								data-tracking-name="Start tracing your ancestors">Start tracing your ancestors</a></li>
-						<li><a href="" id="navLinkMessageBoards"
-								data-tracking-name="Message Boards">Message Boards</a></li>
-						<li><a href="" id="navLinkCommunity"
-								data-tracking-name="Community">Community</a></li>
-						<li><a href="" rel="noreferrer"
-								id="navLinkExpert" data-tracking-name="Expert Assistance">Hire an Expert</a></li>
-
-					</ul>
-				</div>
-
-
-				<div class="navExtrasMenu navSubMenu navMobileSubMenu navVersion21" id="navExtrasMenu">
-					<h5 class="show480 calloutMenuTitle iconAfter iconArrowSmallDownAfter">Extras</h5>
-					<ul>
-
-						<li><a href="" id="navLinkWW1"
-								data-tracking-name="World War 1-100 years">World War 1-100 years</a></li>
-						<li><a href="" rel="noreferrer" id="navLinkMyCanvas"
-								data-tracking-name="Photo Books &amp; Posters">Photo Books &amp; Posters</a></li>
-						<li><a href="" rel="noreferrer"
-								id="navLinkProGen" data-tracking-name="ProGenealogists">ProGenealogists</a></li>
-						<li><a href="" id="navLinkAcademy"
-								data-tracking-name="Ancestry Academy">Ancestry Academy</a></li>
-						<li><a href="" id="navLinkGiftSub"
-								data-tracking-name="Give a Gift Subscription">Gift Memberships</a></li>
-						<li><a href="" id="navLinkAncestryLab"
-								data-tracking-name="Ancestry Lab">Ancestry Lab&nbsp;<span
-									class="badge badgeColor1 noDisplay" data-badge-id="17"
-									data-badge-expiration="2019-07-20T00:00:00-07:00">Updated</span></a></li>
-					</ul>
-				</div>
-
-			</div>
 
 			<div id="skipped-nav"></div>
 		</nav>
@@ -1997,6 +1884,7 @@
 					}
 				}
 			</style>
+			<!-- 上方宣传大图 -->
 			<div class="desktopView" id="BAUWrap">
 				<section id="dnaHomeHeroSection">
 					<div class="dnaHeroSubHdrBtns clearfix">
@@ -2034,6 +1922,7 @@
                         </a>');
 				</script>
 			</div>
+			<!-- PC视图 -->
 			<div class="hide480 desktopView">
 				<section id="getStartedWrap">
 					<div id="whatDnaBanner" class="text4xlrg bgDark">
@@ -3018,7 +2907,7 @@
 						window._dnaPricing.insert(
 							'\
                             <a href="" class="ancBtn lrg orderDnaBtns" data-linkname="ORDER NOW" data-section="main_cta">联系我</a>'
-							);
+						);
 					</script>
 				</section>
 				<section id="persistentCtaWrap" class="ctaBanner noDisplay">
@@ -3028,10 +2917,11 @@
 						window._dnaPricing.insert(
 							'\
                             <a href="" class="ancBtn lrg orderDnaBtns" data-linkname="ORDER NOW" data-section="main_cta">联系我</a>'
-							);
+						);
 					</script>
 				</section>
 			</div>
+			<!-- 手机视图 -->
 			<div class="show480 mobileView">
 				<section id="aboutDnaWrapPortrait" class="bgDark textCenter clear">
 					<div class="aboutDnaHeadlineWrap">
@@ -3098,50 +2988,93 @@
 		</ul>
 	</footer>
 	<div id="FooterRegion" class="footer2"></div>
-	<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567273271333&di=55e8ff76a48fde7131ddc1d765caf9b2&imgtype=0&src=http%3A%2F%2Fimg1.efu.com.cn%2Fupfile%2Fnews%2Fcommonly%2F2014%2F2014-05-15%2Fdhh12_455540545554052.jpg" alt="">
+	<!-- 移动端菜单 -->
+	<div id="callout">
+		<div class="callout willTransform calloutPositionBottom close" id="calloutWrap-navMobile"
+			style="transform: translate(0px, 40px);position: fixed;">
+			<div class="calloutContent calloutMenu navCalloutMenu" tabindex="-1">
+				<div class="navMobileMenu calloutDomContent" id="navMobileMenu">
+					<a class="calloutMenuTitle navMobileDna" href="#BAUWrap"
+						id="navMobileDna">DNA</a>
+					<a class="calloutMenuTitle navMobileHome" href="#aboutDnaWrapPortrait"
+						id="navMobileHome">步骤</a>
+				</div>
+			</div>
+			<div class="calloutPointer willTransform" style="transform: translate(-140px, 0px);">
+				<div class="calloutPointerShadow"></div>
+			</div>
+		</div>
+	</div>
 	<script>
+		function throttle(callback, delay, noTrail, immediate) {
+			var timeout,
+				previous = 0,
+				result = function () {
+					var self = this,
+						elapsed = Date.now() - previous,
+						args = arguments,
+						timeoutCallback,
+						timeoutDelay;
+
+					function reset() {
+						timeout = undefined;
+					}
+
+					function execute() {
+						previous = Date.now();
+						callback.apply(self, args);
+					}
+					if (immediate && !timeout) {
+						execute();
+					}
+					if (timeout) {
+						clearTimeout(timeout);
+					}
+					if (immediate === undefined && elapsed > delay) {
+						execute();
+					} else if (noTrail !== true) {
+						timeoutCallback = immediate ? reset : execute;
+						timeoutDelay = immediate === undefined ? delay - elapsed : delay;
+						timeout = setTimeout(timeoutCallback, timeoutDelay);
+					}
+				};
+			return result;
+		}
+
 		setTimeout(function () {
 			'use strict';
-			if (document.getElementById('persistentCtaWrap')) {
+			var wrapper = $('#persistentCtaWrap')
+			if (wrapper) {
 				var $window = $(window),
 					$desktopView = $('.desktopView'),
 					isScrollEventBound = false,
 					isFadeComplete = false;
 
-				function throttle(callback, delay, noTrail, immediate) {
-					var timeout,
-						previous = 0,
-						result = function () {
-							var self = this,
-								elapsed = Date.now() - previous,
-								args = arguments,
-								timeoutCallback,
-								timeoutDelay;
 
-							function reset() {
-								timeout = undefined;
-							}
+				// mobile menue btn click
+				$('.navMobile').on('click', function() {
+					var mobileMenu = $('#calloutWrap-navMobile')
+					mobileMenu.toggleClass('open close')
+					if (mobileMenu.hasClass('open')) {
+						$('#dnaHomeMainPage').one('click', function(){
+							mobileMenu.removeClass('open')
+						})
+					}
+				})
 
-							function execute() {
-								previous = Date.now();
-								callback.apply(self, args);
-							}
-							if (immediate && !timeout) {
-								execute();
-							}
-							if (timeout) {
-								clearTimeout(timeout);
-							}
-							if (immediate === undefined && elapsed > delay) {
-								execute();
-							} else if (noTrail !== true) {
-								timeoutCallback = immediate ? reset : execute;
-								timeoutDelay = immediate === undefined ? delay - elapsed : delay;
-								timeout = setTimeout(timeoutCallback, timeoutDelay);
-							}
-						};
-					return result;
-				}
+				// pc menue btn click
+				var pcMenu = $('.navMainMenu')
+				pcMenu.on('click', function(e) {
+					var currentId = e.target.id
+					pcMenu.find('a').each(function(index, element) {
+						console.log(element.id)
+						if (currentId == element.id) {
+							$(element).removeClass('initialized').addClass('navLinkSelected')
+						} else {
+							$(element).removeClass('navLinkSelected').addClass('initialized')
+						}
+					})
+				})
 
 				function persistentCta(event) {
 					if (event && !isScrollEventBound) {
@@ -3199,7 +3132,7 @@
 						});
 				}
 				// animate scroll to target
-				$('#dnaHomeMainPage a[href^="#"]').on('click.animatescroll', function (e) {
+				$('body a[href^="#"]').on('click.animatescroll', function (e) {
 					e.preventDefault();
 					var target = this.hash,
 						$target = $(target);
@@ -3245,7 +3178,7 @@
 							'$trigger': $this
 						});
 				});
-
+				// 底部问题，切换逻辑
 				function faqTabs() {
 					var $this = $(this);
 					if ($this.hasClass('faqActive')) {
@@ -3271,7 +3204,6 @@
 				}
 				dnaResponsive();
 				$window.on('resize.dnaresponsive', throttle(dnaResponsive, 200));
-
 			}
 		}, 3000);
 	</script>

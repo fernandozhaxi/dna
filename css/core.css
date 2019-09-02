@@ -184,7 +184,7 @@ area:focus,
 button:focus,
 .ancBtn:focus,
 [tabindex='0']:focus {
-  outline: 2px solid #ff8e00;
+  outline: none;
   outline-offset: 2px;
 }
 :focus,
