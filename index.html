@@ -712,9 +712,10 @@
 		}
 
 		#uncoverWrap .ethnicityBlobs {
-			background-image: url('images/EV4-ukdna-ethnicity-blobs.png');
-			opacity: 0;
-			z-index: 2;
+			//background-image: url('images/EV4-ukdna-ethnicity-blobs.png');
+			background-image: url('images/propotion.png');
+			opacity: 50;
+			z-index: 1;
 		}
 
 		#uncoverWrap .ethnicityMap,
@@ -1826,7 +1827,8 @@
 
 				@media screen and (min-width:1005px) {
 					#BAUWrap .BAUBrandHero {
-						background-image: url(images/backstory-brand-hero.jpg);
+						//background-image: url(images/backstory-brand-hero.jpg);
+						background-image: url(images/father-son.jpg);
 						height: 750px;
 						padding: 0 85px;
 					}
@@ -1893,19 +1895,19 @@
 					</div>
 					<div class="BAUBrandHero">
 						<div class="BAUContentCon bgDark textCenter">
-							<h1><i>Your backstory is</i> <br><span class="bold heading2">in your DNA</span></h1>
-							<p class="heroIntro smallLineHeight">AncestryDNA® can <br class="show480">reveal <br
-									class="hide480">your heritage <br class="show480">and <br class="hide480">connect
-								you to <br class="show480">family <br class="hide480">past and present.</p>
+							<h1><i>你的孩子</i> <br><span class="bold heading3">你生命的延续</span></h1>
+							<p class="heroIntro smallLineHeight">荣浩基因® 帮你 <br class="show480"> <br
+									class="hide480">解开生命的密码<br class="show480">， <br class="hide480">揭示
+								你和你孩子<br class="show480">的联系， <br class="hide480"></p>
 							<script>
 								window._dnaPricing.insert('\
                                         <div class="heroPricingCon clearfix hide480">\
                                             <div class="priceTextCon bold">\
-                                                <span id="desktopPrices" class="onlySpan textxsml">Only</span>\
+                                                <span id="desktopPrices" class="onlySpan textxsml">只需要</span>\
                                                 <span class="bigPrice">' + _dnaPricing.use.price + '<sup>*</sup></span>\
                                             </div>\
                                             <div class="heroCta">\
-                                                <a href="" class="ancBtn blue full lrg" data-linkname="ORDER NOW" data-section="main_cta">Order your kit now</a>\
+                                                <a href="images/wechat_QR_code.jpg" class="ancBtn blue full lrg" data-linkname="ORDER NOW" data-section="main_cta">点击订购</a>\
                                             </div>\
                                         </div>\
                                         ');
@@ -1927,35 +1929,33 @@
 				<section id="getStartedWrap">
 					<div id="whatDnaBanner" class="text4xlrg bgDark">
 						<a href="#whatDnaBanner">
-							<h2>Get started in a few simple steps</h2>
+							<h2>简单，方便，快捷，无痛 DNA测试步骤</h2>
 						</a>
 					</div>
 					<div class="ancGrid getStartedCon">
 						<div class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step1Img"></span></div>
-								<p class="stepsText text2xlrg">Order your complete kit with easy-to-follow instructions.
+								<p class="stepsText text2xlrg">点击订购按钮加微信订购测试包。测试包会在3天内送到您手中
 								</p>
 							</div>
 						</div>
 						<div class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step2Img"></span></div>
-								<p class="stepsText text2xlrg">Return a small saliva sample in the prepaid envelope.</p>
+								<p class="stepsText text2xlrg">按说明取得唾液样本，交回快递送回测试中心</p>
 							</div>
 						</div>
 						<div class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step3Img"></span></div>
-								<p class="stepsText text2xlrg">Your DNA will be analysed at more than 700,000 genetic
-									markers.</p>
+								<p class="stepsText text2xlrg">你的样本会在我们的测试中心进行DNA测试（通过比对70万个基因标志）</p>
 							</div>
 						</div>
 						<div class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step4Img"></span></div>
-								<p class="stepsText text2xlrg">Within 6-8 weeks, expect an email with a link to your
-									online results.</p>
+								<p class="stepsText text2xlrg">你的测试结果可以在1-2周后通过微信或指定邮箱获取</p>
 							</div>
 						</div>
 					</div>
@@ -1965,11 +1965,11 @@
 					<div class="ethnicityBlobs noDisplay"></div>
 					<div class="clearfix" id="uncoverCon">
 						<div class="ethmixCon">
-							<h3>Irish? Scandinavian? What are you?</h3>
-							<p id="ethnicText">AncestryDNA can estimate your origins to more than 500 regions around
-								the&nbsp;world.</p>
+							<h3>你知道吗？</h3>
+							<p id="ethnicText">根据我们的历史数据，有28%的DNA送测标本显示没有血缘关系
+								</p>
 							<p class="textxlrg" id="ethnicLink"><button class="ancLink" id="dnaRegionsMdlBtn"
-									type="button">See all regions</button><br />covered by the AncestryDNA test.</p>
+									type="button">显示更多</button><br />我们的测试数据库</p>
 							<p class="textxsml bold"></p>
 						</div>
 						<div class="findRelativesCon">
@@ -1978,10 +1978,11 @@
 									<div class="findRelativesFaces noDisplay"></div>
 								</div>
 								<div class="ancCol w50 findRelativesGridContent">
-									<h3 class="noTopSpacing">Connect with relatives you never knew you had.</h3>
-									<p id="findRelText">Once you've taken your test, we'll search our global network of
-										AncestryDNA members and identify the people who share your DNA. There's no limit
-										to what you might discover&mdash;together.</p>
+									<p></p>
+									<h3 class="noTopSpacing">为了解决你的疑惑</h3>
+									<p id="findRelText">DNA测试的准确度超过99.99%
+										我们趋近全力，只为给你一份准确的结果
+										</p>
 								</div>
 							</div>
 						</div>
@@ -2927,7 +2928,7 @@
 					<div class="aboutDnaHeadlineWrap">
 						<h2 class="aboutDnaTitle topSpacingBlock">AncestryDNA&mdash;The World's Largest Consumer DNA
 							Database.</h2>
-						<p class="text2xlrg">Get started in a few simple steps.</p>
+						<p class="text2xlrg">简单，方便，快捷，无痛 DNA测试步骤</p>
 					</div>
 					<div class="ancGrid getStartedCon">
 						<div class="stepsCon ancCol w25 half768 full320">
