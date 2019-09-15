@@ -6,7 +6,7 @@
 	<meta name="description"
 		content="AncestryDNA&reg; is the newest DNA test which helps you find genetic relatives and expand your genealogy research. Order your DNA test kit today.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0"> -->
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<link href="css/stdin.css" rel="stylesheet" />
@@ -1587,10 +1587,10 @@
 		<nav class="nav navLoggedOut navVersion21 navStandard" id="nav" aria-label="Main Menu"
 			data-nav-version="navVersion21">
 			<a href="#skipped-nav" class="hideVisually" id="navSkip">Skip Ancestry navigation</a>
-			<button type="button"
+			<!-- <button type="button"
 				class="link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow link navMobile navLink icon iconMenu show480 calloutTriggerNoArrow calloutTrigger initialized"
 				id="navMobile" aria-controls="navMobileMenu" ><span class="hideVisually">Main
-					Menu</span></button>
+					Menu</span></button> -->
 			<a class="navLink navLogo" href="">
 				<img alt="Ancestry Home" height="21" src="assets/ancestry-on-dark.svg" width="118">
 			</a>
@@ -1630,7 +1630,7 @@
 				}
 
 				#BAUWrap .BAUBrandHero {
-					background: #181a1c url(images/backstory-brand-hero-m.jpg) no-repeat top center;
+					background: #181a1c url(images/father-son.jpg) no-repeat top center;
 					background-size: cover;
 					border-bottom: solid 6px #abda3b;
 					height: 327px;
@@ -1743,7 +1743,8 @@
 					}
 
 					#BAUWrap .BAUBrandHero {
-						background-image: url(images/backstory-brand-hero-t.webp);
+						/* background-image: url(images/backstory-brand-hero-t.webp); */
+						background-image: url(images/father-son.jpg);
 						border-bottom: none;
 						height: 608px;
 						padding: 0 32px;
@@ -1823,7 +1824,7 @@
 
 				@media screen and (min-width:1005px) {
 					#BAUWrap .BAUBrandHero {
-						//background-image: url(images/backstory-brand-hero.jpg);
+						/* //background-image: url(images/backstory-brand-hero.jpg); */
 						background-image: url(images/father-son.jpg);
 						height: 750px;
 						padding: 0 85px;
@@ -1903,7 +1904,7 @@
                                                 <span class="bigPrice">' + _dnaPricing.use.price + '<sup>*</sup></span>\
                                             </div>\
                                             <div class="heroCta">\
-                                                <a href="images/wechat_QR_code.jpg" class="ancBtn blue full lrg" data-linkname="ORDER NOW" data-section="main_cta">点击订购</a>\
+                                                <div class="ordernow ancBtn blue full lrg" data-type="ORDER_NOW">点击订购</di>\
                                             </div>\
                                         </div>\
                                         ');
@@ -1911,14 +1912,14 @@
 						</div>
 					</div>
 				</section>
-				<script>
+				<!-- <script>
 					window._dnaPricing.insert('\
                         <a href="" class="bgColor8 heroMobileButton linked show480">\
                             <span class="icon iconDna text4xlrg"></span>\
                             <span class="bold textxsml">只需要 ' + _dnaPricing.use.price + '* </span>\
                             <span class="ancBtn ancBtnIconOnly icon iconArrowRight ancBtnRnd"></span>\
                         </a>');
-				</script>
+				</script> -->
 			</div>
 			<!-- PC视图 -->
 			<div class="hide480 desktopView">
@@ -1929,26 +1930,26 @@
 						</a>
 					</div>
 					<div class="ancGrid getStartedCon">
-						<div class="stepsCon ancCol w25 half768">
+						<div data-modalcontentid="one" class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step1Img"></span></div>
 								<p class="stepsText text2xlrg">点击订购按钮加微信订购测试包。测试包会在3天内送到您手中
 								</p>
 							</div>
 						</div>
-						<div class="stepsCon ancCol w25 half768">
+						<div data-modalcontentid="two" class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step2Img"></span></div>
 								<p class="stepsText text2xlrg">按说明取得唾液样本，通过快递送回测试中心</p>
 							</div>
 						</div>
-						<div class="stepsCon ancCol w25 half768">
+						<div data-modalcontentid="three" class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step3Img"></span></div>
 								<p class="stepsText text2xlrg">你的样本会在我们的测试中心进行DNA测试（通过比对700000个基因标志）</p>
 							</div>
 						</div>
-						<div class="stepsCon ancCol w25 half768">
+						<div data-modalcontentid="four" class="stepsCon ancCol w25 half768">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step4Img"></span></div>
 								<p class="stepsText text2xlrg">你的测试结果可以在1-2周后通过微信或指定邮箱获取</p>
@@ -2645,20 +2646,20 @@
 								</div>
 							</div>
 						</div>
-
-							<div id="story2Con" class="storyCon conBody">
-								<div class="storySprite story2Img ancCol w50 full768">
-									<button type="button" class="ancBtn silver underImg storyModalTriggerBtn"
-										data-modalcontentid="story2Modal">他的故事</button>
-								</div>
-								<div class="storyTextCon ancCol w50 full768">
-									<h4>困惑的李先生</h4>
-									<p>孩子越来越大，却越来越不像自己。李先生充满了困惑，于是找到我们......
-										</p>
-									<button type="button" class="ancBtn silver underText storyModalTriggerBtn"
-										data-modalcontentid="story2Modal">他的故事</button>
-								</div>
+						<div class="ancCol w33 conSecond">
+						<div id="story2Con" class="storyCon conBody">
+							<div class="storySprite story2Img ancCol w50 full768">
+								<button type="button" class="ancBtn silver underImg storyModalTriggerBtn"
+									data-modalcontentid="story2Modal">他的故事</button>
 							</div>
+							<div class="storyTextCon ancCol w50 full768">
+								<h4>困惑的李先生</h4>
+								<p>孩子越来越大，却越来越不像自己。李先生充满了困惑，于是找到我们......
+									</p>
+								<button type="button" class="ancBtn silver underText storyModalTriggerBtn"
+									data-modalcontentid="story2Modal">他的故事</button>
+							</div>
+						</div>
 						</div>
 						<div class="ancCol w33 conSecond">
 							<div id="story3Con" class="storyCon conBody">
@@ -2675,7 +2676,24 @@
 								</div>
 							</div>
 						</div>
+						</div>
 					</div>
+					<!-- 点击4个图标弹出的内容 -->
+					<div class="modal dna-whoami-modal textxlrg" id="one">
+						<h5 class="text5xlrg">
+							<img src="images/wechat_QR_code.jpg" alt="">
+						</h5>
+					</div>
+					<div class="modal dna-whoami-modal textxlrg" id="two">
+						<h5 class="text5xlrg">按说明取得唾液样本，通过快递送回测试中心 prepaid envelope.</h5>
+					</div>
+					<div class="modal dna-whoami-modal textxlrg" id="three">
+						<h5 class="text5xlrg">你的样本会在我们的测试中心进行DNA测试 （通过比对700000个基因标志）</h5>
+					</div>
+					<div class="modal dna-whoami-modal textxlrg" id="four">
+						<h5 class="text5xlrg">你的测试结果可以在1-2周后通过微信或指定邮箱获取</h5>
+					</div>
+
 					<div class="modal dna-whoami-modal textxlrg" id="story1Modal">
 						<div class="dnas-whoami-img dnas-whoami-1"></div>
 						<h5 class="text5xlrg">Ali Clemesha</h5>
@@ -2754,7 +2772,7 @@
 						<aside id="dnaFaqOptionsCon" class="ancCol w30">
 							<ul>
 								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn1"
-										class="faqBtn active" data-number="1">关于我们?</button></li>
+										class="faqBtn active faqActive" data-number="1">关于我们?</button></li>
 								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn3"
 										class="faqBtn active" data-number="7">关于价格?</button></li>
 								<li class="iconAfter iconArrowRightAfter"><button type="button" id="faqBtn4"
@@ -2883,7 +2901,7 @@
 					<script>
 						window._dnaPricing.insert(
 							'\
-                            <a href="" class="ancBtn lrg orderDnaBtns" data-linkname="ORDER NOW" data-section="main_cta">联系我</a>'
+                            <div class="ordernow ancBtn lrg orderDnaBtns">联系我</div>'
 						);
 					</script>
 				</section>
@@ -2893,13 +2911,13 @@
 					<script>
 						window._dnaPricing.insert(
 							'\
-                            <a href="" class="ancBtn lrg orderDnaBtns" data-linkname="ORDER NOW" data-section="main_cta">联系我</a>'
+                            <div class="ordernow ancBtn lrg orderDnaBtns">联系我</div>'
 						);
 					</script>
 				</section>
-			</div>
+			</di>
 			<!-- 手机视图 -->
-			<div class="show480 mobileView">
+			<!-- <div class="show480 mobileView">
 				<section id="aboutDnaWrapPortrait" class="bgDark textCenter clear">
 					<div class="aboutDnaHeadlineWrap">
 						<h2 class="aboutDnaTitle topSpacingBlock">中国最专业的DNA鉴定机构
@@ -2907,28 +2925,28 @@
 						<p class="text2xlrg">简单，方便，快捷，无痛 DNA测试步骤</p>
 					</div>
 					<div class="ancGrid getStartedCon">
-						<div class="stepsCon ancCol w25 half768 full320">
+						<div data-modalcontentid="one" class="stepsCon ancCol w25 half768 full320">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step1Img"></span></div>
 								<p class="stepsText coloralt4 text2xlrg">点击订购按钮加微信订购测试包。
 									测试包会在3天内送到您手中</p>
 							</div>
 						</div>
-						<div class="stepsCon ancCol w25 half768 full320">
+						<div data-modalcontentid="two"  class="stepsCon ancCol w25 half768 full320">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step2Img"></span></div>
 								<p class="stepsText coloralt4 text2xlrg">按说明取得唾液样本，通过快递送回测试中心
 									prepaid&nbsp;envelope.</p>
 							</div>
 						</div>
-						<div class="stepsCon ancCol w25 half768 full320">
+						<div data-modalcontentid="three" class="stepsCon ancCol w25 half768 full320">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step3Img"></span></div>
 								<p class="stepsText coloralt4 text2xlrg">你的样本会在我们的测试中心进行DNA测试
 												（通过比对700000个基因标志）</p>
 							</div>
 						</div>
-						<div class="stepsCon ancCol w25 half768 full320">
+						<div data-modalcontentid="four" class="stepsCon ancCol w25 half768 full320">
 							<div class="stepsWrap">
 								<div class="stepsBubble"><span class="dnaV3Sprite step4Img"></span></div>
 								<p class="stepsText coloralt4 text2xlrg">你的测试结果可以在1-2周后通过微信或指定邮箱获取</p>
@@ -2936,38 +2954,12 @@
 						</div>
 					</div>
 				</section>
-			</div>
+			</div> -->
 		</main>
 	</div>
-<!--
-	<footer class="dnaHomeFooter textxsml">
-		<ul class="textCenter hide480">
-			<li><a href="" target="_blank">AncestryDNA Privacy
-					<span class="hide480">Statement</span>&nbsp;
-				</a></li>
-			<li><a href="" target="_blank">AncestryDNA <span class="hide480">Terms and Conditions</span><span
-						class="show480">T&amp;C</span>&nbsp;
-				</a></li>
-			<li><a href="" target="_blank">Informed
-					Consent</a></li>
-			<li><a href="" target="_blank">FAQ</a></li>
-		</ul>
-		<ul class="textCenter show480">
-			<li><a href="" target="_blank">AncestryDNA Privacy
-					<span class="hide480">Statement</span></a></li>
-			<li><a href="" target="_blank">AncestryDNA <span class="hide480">Terms and Conditions</span><span
-						class="show480">T&amp;C</span></a></li>
-		</ul>
-		<ul class="textCenter show480">
-			<li><a href="" target="_blank">Informed
-					Consent</a></li>
-			<li><a href="" target="_blank">FAQ</a></li>
-		</ul>
-	</footer>
--->
 	<div id="FooterRegion" class="footer2"></div>
 	<!-- 移动端菜单 -->
-	<div id="callout">
+	<!-- <div id="callout">
 		<div class="callout willTransform calloutPositionBottom close" id="calloutWrap-navMobile"
 			style="transform: translate(0px, 40px);position: fixed;">
 			<div class="calloutContent calloutMenu navCalloutMenu" tabindex="-1">
@@ -2982,7 +2974,8 @@
 				<div class="calloutPointerShadow"></div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<script src="js/core.js"></script>
 	<script>
 		function throttle(callback, delay, noTrail, immediate) {
 			var timeout,
@@ -3147,9 +3140,21 @@
 						'$trigger': $this
 					});
 				});
-				$('#modalFindRelVidBtn').on('click.relativemodal', function (e) {
-					var $this = $(this);
-					$('<div><iframe width="750" height="500" src="https://www.youtube.com/embed/8wBVFoK7UVU?autoplay=1" frameborder="0" allowfullscreen></iframe></div>')
+				$('.stepsCon').on('click', function (e) {
+					var $this = $(this),
+						contentid = '#' + $this.data('modalcontentid');
+					$(contentid)
+						.modal({
+							'width': 800,
+							'showLoading': false,
+							'$trigger': $this
+						});
+				});
+				$('.ordernow').on('click', function (e) {
+					var $this = $(this),
+						type = '#' + $this.data('type');
+					console.log(type)
+					$('<img src="images/wechat_QR_code.jpg" alt="">')
 						.modal({
 							'width': 800,
 							'showLoading': false,

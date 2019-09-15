@@ -212,7 +212,7 @@
     max-width: 200px;
   }
 }
-@media (min-width: 1006px) {
+/* @media (min-width: 1006px) {
   .navMessages.navMessages {
     padding-left: 4px;
     padding-right: 4px;
@@ -224,8 +224,8 @@
     padding-left: 6px;
     padding-right: 4px;
   }
-}
-@media (max-width: 1005px) {
+} */
+/* @media (max-width: 1005px) {
   .navSecondaryMenu .navLink {
     padding-left: 8px;
     padding-right: 8px;
@@ -238,8 +238,8 @@
     margin-right: -12px;
     vertical-align: top;
   }
-}
-@media (min-width: 768px) and (max-width: 1005px) {
+} */
+/* @media (min-width: 768px) and (max-width: 1005px) {
   .navLoggedIn .navAccount::after {
     margin-left: 1px;
   }
@@ -275,8 +275,8 @@
   .navSubMenu .userCardTitleText:not(:only-child) {
     max-width: 200px;
   }
-}
-@media (max-width: 767px) {
+} */
+/* @media (max-width: 767px) {
   .navSecondaryMenu {
     height: 40px;
     left: 0;
@@ -387,7 +387,7 @@
   li.navLanguageToggleContainer {
     border-top: 2px solid #bebbb3;
   }
-}
+} */
 /* Progen Modal */
 .navProgenLogo.navProgenLogo {
   height: 33px;
@@ -418,26 +418,28 @@
   margin-top: 15px;
   padding-top: 6px;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .navForgot {
     color: inherit;
   }
   .navAccountMenu .calloutMenuTitle {
     display: block;
-  } /* When removing this style, remove the calloutMenuTitle from the DOM as well */
-}
-@media (min-width: 768px) {
+  }
+} */
+  /* When removing this style, remove the calloutMenuTitle from the DOM as well */
+
+/* @media (min-width: 768px) {
   .navAccountMenu .calloutMenuTitle + ul > li:first-child {
     border-top: none;
   }
-}
-@media (min-width: 768px) and (max-width: 870px) {
+} */
+/* @media (min-width: 768px) and (max-width: 870px) {
   html[lang^='fr'] .navLoggedOut .navSubscribeLink {
     display: none;
   }
-}
+} */
 /* Simple Header */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .navSimple .navMobile,
   .navConversion .navMobile {
     display: none;
@@ -447,12 +449,12 @@
   .navLogoOnly .navLogo {
     margin-left: 0;
   }
-}
+} */
 /* Institution Header */
 span.navAccount {
   pointer-events: none;
 }
-@media (min-width: 768px) and (max-width: 900px) {
+/* @media (min-width: 768px) and (max-width: 900px) {
   .navVersionInstitution21 {
     white-space: nowrap;
   }
@@ -466,7 +468,7 @@ span.navAccount {
   span.navAccount.navAccount::before {
     top: 0;
   }
-}
+} */
 /* Conversion Header */
 .navConversion {
   background-color: #f5f5f5;
@@ -492,7 +494,7 @@ span.navAccount {
 .navConversion .navLanguageToggle {
   margin-left: -9px;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .navSimple .navSecondaryMenu,
   .navConversion .navSecondaryMenu {
     padding-right: 42px;
@@ -509,13 +511,13 @@ span.navAccount {
   .navSimple .navSecondaryMenu .userCard.userCard {
     margin-top: 1px;
   }
-}
-@media (max-width: 479px) {
+} */
+/* @media (max-width: 479px) {
   .navConversion .navLogo img {
     height: 24px;
     margin: 6px 0 0px -10px;
   }
-}
+} */
 @media print {
   #HeaderRegion > * {
     display: none;
@@ -535,7 +537,7 @@ span.navAccount {
 .navCart.navCart:not(:hover)::before {
   opacity: 0.8;
 }
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .navCartMenu {
     width: 310px;
   }
@@ -560,15 +562,15 @@ span.navAccount {
   #phxNavCartMenu {
     width: 310px;
   }
-}
-@media (min-width: 768px) {
+} */
+/* @media (min-width: 768px) {
   .navCart.navCart {
     padding-right: 2px;
   }
   #phxNavCartMenu {
     width: 375px;
   }
-}
+} */
 .navCartCheckout.navCartCheckout {
   color: #d58a34;
   font-weight: bold;
